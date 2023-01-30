@@ -1,18 +1,18 @@
 import styles from '@/styles/Home.module.css'
 
-
+// https://rxresu.me/gauravtak996/gaurav-tak //Resume link
 
 export default function Home() {
   return (
-    <div className='mt-10'>
+    <div className='mt-10 mx-16'>
 
-      <div className='relative pt-10'>
+      <div className='relative py-20 bg-yellow-500 rounded-xl'>
         {/* Navbar division  */}
-        <nav className='w-96 mb-10 mr-20 bg-slate-300 flex justify-evenly absolute top-0 right-0 rounded-full'>
+        <nav className='w-96 mt-10 mb-10 mr-20 bg-slate-300 flex justify-evenly absolute top-0 right-0 rounded-full'>
           <ul className='flex flex-row '>
-            <li className='ml-3 p-2'>Home</li>
-            <li className='ml-3 p-2'>About</li>
-            <li className='ml-3 p-2'>Contact</li>
+            <li className='ml-3 p-2'><a href="#">Home</a></li>
+            <li className='ml-3 p-2'><a href="#">About</a></li>
+            <li className='ml-3 p-2'><a href="#">Contact</a></li>
           </ul>
         </nav>
         {/* Intro division  */}
@@ -44,3 +44,8 @@ export default function Home() {
 
   )
 }
+
+
+
+
+
