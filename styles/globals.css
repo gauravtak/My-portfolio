@@ -4,5 +4,7 @@
 
 
 body{
-    background-color:#86E5FF;
+    background-image: url('../public/bg_design2.png');
+    background-attachment: fixed;
 }
+
