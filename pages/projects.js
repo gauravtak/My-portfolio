@@ -1,17 +1,48 @@
 import styles from '@/styles/Home.module.css'
+import { useRef } from 'react'
 
 
 export default function Projects() {
+
+    const ref = useRef(null)
+
+    const scroll = (scrollOffSet)=>{
+        ref.current.scrollLeft += scrollOffSet;
+        console.log(scrollOffSet)
+    }
+
+
+
     return (
         <div className='text-center'>
-            <div className='py-16 px-7  m-12 bg-white rounded-lg'>
-                <img className='mx-auto w-40 rounded-full mb-10' src="https://www.meme-arsenal.com/memes/5ee99d558641255d6e670bbd54953397.jpg" alt="flower" />
-                {/* <h1 className='text-3xl font-bold'>Hi, This is Gaurav</h1> */}
-                <p className='px-14'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, saepe quam quis porro aliquam, libero odio fugit eius doloremque earum inventore illum quae, laborum quos nesciunt incidunt veniam accusantium? Necessitatibus!</p>
+            <h1 className=' bg-white py-4 m-20'>My Projects</h1>
 
-                
+            <div className='md:mx-40'>
+                <div className='snap-x snap-mandatory gap-10 flex overflow-x-scroll' ref={ref}>
+                    <div className='snap-center flex-shrink-0'>
+                        <img src="/1.jpg" />
+                    </div>
+                    <div className='snap-center flex-shrink-0'>
+                        <img src="/1.jpg" />
+                    </div>
 
+                    <div className='snap-center flex-shrink-0'>
+                        <img src="/1.jpg" />
+                    </div>
+
+                    <div className='snap-center flex-shrink-0'>
+                        <img src="/1.jpg" />
+                    </div>
+                    <div className='snap-center flex-shrink-0'>
+                        <img src="/1.jpg" />
+                    </div>
+                </div>
             </div>
+            <div className='mt-10'>
+            <button onClick={()=>scroll(-20)}>left</button>
+            <button onClick={()=>scroll(20)}>right</button>
+            </div>
+           
         </div>
     )
 } 
