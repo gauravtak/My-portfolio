@@ -11,13 +11,12 @@ export default function Home() {
   return (
     <div className='text-center'>
 
-      <ul>
-        <ul className='flex flex-row '>
-          <li className='ml-3 p-2 text-black' ><button href="#">Home</button></li>
-          <li className='ml-3 p-2 text-black' ><button href="#">Projects</button></li>
-          <li className='ml-3 p-2 text-black'><button href="#">Contact</button></li>
+       <ul className='flex flex-row '>
+          <li className='ml-3 p-2 text-white' ><button href="#">Home</button></li>
+          <li className='ml-3 p-2 text-white' ><button href="#project">Projects</button></li>
+          <li className='ml-3 p-2 text-white'><button href="#">Contact</button></li>
         </ul>
-      </ul>
+     
 
       <div className='py-16 px-7  m-12 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
         <img className='mx-auto w-40 rounded-full mb-10' src="https://www.meme-arsenal.com/memes/5ee99d558641255d6e670bbd54953397.jpg" alt="flower" />

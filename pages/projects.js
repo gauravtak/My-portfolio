@@ -6,8 +6,8 @@ export default function Projects() {
 
     const ref = useRef(null)
 
-    const scroll = (scrollOffSet)=>{
-        ref.current.scrollLeft += scrollOffSet;
+    const scroll = (scrollOffSet) => {
+        ref.current.scrollLeft += scrollOffSet; // getting and setting scrolll value 
         console.log(scrollOffSet)
     }
 
@@ -15,10 +15,10 @@ export default function Projects() {
 
     return (
         <div className='text-center'>
-            <h1 className=' bg-white py-4 m-20'>My Projects</h1>
+            <h1 className=' text-white py-4 m-20'>My Projects</h1>
 
-            <div className='md:mx-40'>
-                <div className='snap-x snap-mandatory gap-10 flex overflow-x-scroll' ref={ref}>
+            <div className=' md:mx-40' ref={ref}>
+                <div className='snap-x snap-mandatory gap-10 flex overflow-x-scroll' >
                     <div className='snap-center flex-shrink-0'>
                         <img src="/1.jpg" />
                     </div>
@@ -39,10 +39,10 @@ export default function Projects() {
                 </div>
             </div>
             <div className='mt-10'>
-            <button onClick={()=>scroll(-20)}>left</button>
-            <button onClick={()=>scroll(20)}>right</button>
+                <button onClick={() => scroll(-20)}>left</button>
+                <button onClick={() => scroll(20)}>right</button>
             </div>
-           
+
         </div>
     )
 } 
