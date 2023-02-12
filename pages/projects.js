@@ -3,7 +3,7 @@ import { useRef } from 'react'
 
 
 export default function Projects() {
-
+// Need to add left and right scroll with buttons
     const ref = useRef(null)
 
     const scroll = (scrollOffSet) => {
@@ -38,7 +38,7 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-            <div className='mt-10'>
+            <div className='mt-10 text-white'>
                 <button onClick={() => scroll(-20)}>left</button>
                 <button onClick={() => scroll(20)}>right</button>
             </div>
