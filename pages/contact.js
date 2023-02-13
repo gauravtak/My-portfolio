@@ -3,7 +3,6 @@ import styles from '@/styles/Home.module.css'
 import { FaLinkedin, FaTwitter } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
-import { FaLinkedIn } from "react-icons/fa"
 import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -11,7 +10,7 @@ import { motion, useAnimation } from "framer-motion";
 
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 }},
   hidden: { opacity: 0, scale: 0 }
 }
 
@@ -41,8 +40,8 @@ export default function Contact() {
 
 
   return (
-    <div className=''>
-      <h1 className='text-white m-14'>Contacts</h1>
+    <div className='text-center'>
+      <h1 className='m-14  text-fuchsia-400 font-extrabold text-[25px] lg:text-[40px]'>Contacts</h1>
       <motion.div ref={ref} variants={boxVariant} initial='hidden' animate={control} className='flex justify-center overflow-x-auto'>
         <div className=' md:py-14 md:px-14 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
           <a href=""><FaTwitter size={50} /></a>

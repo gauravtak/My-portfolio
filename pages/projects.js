@@ -1,5 +1,6 @@
 import styles from '@/styles/Home.module.css'
 import { useRef } from 'react'
+import { HiArrowCircleRight,HiArrowCircleLeft } from "react-icons/hi";
 
 
 export default function Projects() {
@@ -15,7 +16,7 @@ export default function Projects() {
 
     return (
         <div className='text-center'>
-            <h1 className=' text-white py-4 m-20'>My Projects</h1>
+            <h1 className='py-4 m-20 text-fuchsia-400 font-extrabold text-[25px] lg:text-[40px]'>My Projects</h1>
 
             <div className=' md:mx-40' ref={ref}>
                 <div className='snap-x snap-mandatory gap-10 flex overflow-x-scroll' >
@@ -39,8 +40,8 @@ export default function Projects() {
                 </div>
             </div>
             <div className='mt-10 text-white'>
-                <button onClick={() => scroll(-20)}>left</button>
-                <button onClick={() => scroll(20)}>right</button>
+                <button className='transition-all ease-in-out hover:translate-y-2 duration-300 hover:scale-100' onClick={() => scroll(-20)}><HiArrowCircleLeft size={70}/></button>
+                <button className='transition-all ease-in-out hover:translate-x-2 duration-300 hover:scale-100' onClick={() => scroll(20)}><HiArrowCircleRight size={70} color={'#038ffff'}/></button>
             </div>
 
         </div>
