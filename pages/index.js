@@ -35,7 +35,7 @@ export default function Home() {
     <div>
       <div>
         <ul className='flex flex-row '>
-          <li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] lg:text-[20px]' ><button href="#">Home</button></li>
+          <li className='ml-3 p-2 text-white hover:text-fuchsia-300 font-extrabold text-[15px] lg:text-[20px]' ><button href="#">Home</button></li>
           <li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] lg:text-[20px]' ><button href="#project">Projects</button></li>
           <li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] lg:text-[20px]'><button href="#">Contact</button></li>
         </ul>
