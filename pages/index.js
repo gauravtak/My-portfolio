@@ -1,23 +1,25 @@
 import styles from '@/styles/Home.module.css'
 import Projects from '../pages/projects.js'
-import Contact from "../pages/contact.js";
+import Footer from "../pages/footer.js";
 import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { FaTwitter } from "react-icons/fa"
+import { FaTwitter, FaGit, FaJsSquare, FaReact, FaPython } from "react-icons/fa"
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
+import { DiMongodb, DiNodejsSmall, DiStackoverflow } from "react-icons/di";
+import { HiArrowCircleRight } from "react-icons/hi";
 
 // https://rxresu.me/gauravtak996/gaurav-tak //Resume link
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 }
 }
 
 export default function Home() {
-   
+
   const router = useRouter();
 
   const control = useAnimation();
@@ -28,9 +30,9 @@ export default function Home() {
     if (inView) {
       control.start("visible")
     }
-    else {
-      control.start("hidden")
-    }
+    // else {
+    //   control.start("hidden")
+    // }
 
   }, [control, inView]);
 
@@ -40,77 +42,110 @@ export default function Home() {
   return (
     <div>
       <div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <ul className='flex flex-row '>
-          <li className='ml-3 p-2 text-white hover:text-fuchsia-300 font-extrabold text-[15px] lg:text-[20px]' ><button href="#">Home</button></li>
-          <li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] lg:text-[20px]' ><button href="#project">Projects</button></li>
-          <li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] lg:text-[20px]'><button href="#">Contact</button></li>
-=======
-=======
->>>>>>> eb6fd8193e3ca86563ca25a24fe4b4773a7d869d
-        <ul className='flex flex-row justify-center '>
-          <Link href="/"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] lg:text-[20px]' >Home</li></Link>
-          <Link href="/projects"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] lg:text-[20px]' >Projects</li></Link>
-          <Link href="/contact"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] lg:text-[20px]'>Contact</li></Link>
-<<<<<<< HEAD
->>>>>>> eb6fd81 (page navigation implemented and resume js created)
-=======
->>>>>>> eb6fd8193e3ca86563ca25a24fe4b4773a7d869d
+
+
+        <ul className='flex flex-row justify-center'>
+          <Link href="/"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] md:text-[20px]' >Home</li></Link>
+          <Link href="/projects"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] md:text-[20px]' >Projects</li></Link>
+          <Link href="/contact"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] md:text-[20px]'>Contact</li></Link>
+
+
+
+
         </ul>
       </div>
 
 
-      <div className='flex text-center md:text-left min-h-[55vh]'>
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[40%] py-12 px-10 m-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+      <div className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px]'>
+
+        {/*------------------------------------------ 1st Motion div --------------------------------------------------------- */}
+
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[100%] md:basis-[40%] py-12 px-10 m-10 md:mx-1 md:mb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           <div className=" text-zinc-800 font-sans">
-            <img className=' shadow-2xl lg:mx-4 mx-auto w-20 rounded-full' src="https://www.meme-arsenal.com/memes/5ee99d558641255d6e670bbd54953397.jpg" alt="flower" />
-            <div className='lg:flex ml-5 lg:flex-col'>
-              <h1 className='lg:mt-5 text-3xl font-bold'>Hi, This is Gaurav</h1>
-              <p className='lg:pr-40 lg:mb-4 mt-4'>A Frontend Web Developer</p>
+            <img className=' shadow-2xl my-4 md:my-2 md:ml-4 mx-auto w-20 rounded-full' src="https://www.meme-arsenal.com/memes/5ee99d558641255d6e670bbd54953397.jpg" alt="flower" />
+            <div className='md:flex ml-5 md:flex-col'>
+              <h1 className='md:mt-5 text-3xl font-bold'>Hi, This is Gaurav</h1>
+              <p className='md:pr-40 md:mb-4 mt-4'>A Frontend Web Developer</p>
+            </div>
+
+          </div>
+        </motion.div>
+
+        {/*---------------------------------------- 2nd Motion div ----------------------------------------------*/}
+
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' mx-10 py-12 md:py-10 md:px-12 md:my-10 md:mx-5 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+          <div className=" text-zinc-800 font-sans">
+            <div className='md:flex ml-2 md:flex-col'>
+              <HiOutlineClipboardDocumentList className='mx-auto' size={80} />
+              <h1 className='md:mt-5 mb-5 text-3xl font-bold'>See My Resume</h1>
+
+              <button type='button' onClick={() => router.push('/resume')} className='transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl hover:bg-gradient-to-tr from-pink-400 to-red-400 md:m-0  md:mx-auto md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button>
             </div>
 
           </div>
 
-          
-          {/* */}
 
         </motion.div>
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' py-10 px-12 my-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+
+        {/*---------------------------------------- 3rd Motion div  -------------------------------------------*/}
+
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           <div className=" text-zinc-800 font-sans">
-            <div className='lg:flex ml-2 lg:flex-col'>
-              <HiOutlineClipboardDocumentList size={80}/>
-              <h1 className='lg:mt-5 mb-5 text-3xl font-bold'>See My Resume</h1>
-              
-              <button type='button' onClick={()=> router.push('/resume')} className='transition-all ease-in-out shadow-xl rounded-xl hover:translate-y-2 duration-300 hover:scale-100 hover:rounded-3xl hover:bg-gradient-to-tr from-pink-400 to-red-400 mt-10 lg:m-0 lg:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button>
+            <div className='relative flex ml-40 md:ml-2 md:flex-col'>
+              <FaTwitter className='md:mt-12' size={100} />
+              <button type='button'><HiArrowCircleRight className='absolute right-4 top-[5rem]  md:left-[5rem] md:top-[10rem]' size={60}/></button>
             </div>
 
           </div>
 
-          
-          {/* */}
-
         </motion.div>
 
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' py-14 px-20 my-10 ml-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
-          <div className=" text-zinc-800 font-sans">
-            <div className='lg:flex ml-2 lg:flex-col'>
-              <FaTwitter size={100}/>
-              <button type='button' onClick={()=> router.push('/twitter')} className='transition-all ease-in-out shadow-xl hover:translate-y-2 duration-300 hover:scale-100 hover:bg-gradient-to-tr from-pink-400 to-red-400 mt-10 lg:m-0 lg:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'><FaTwitter/></button>
-            </div>
 
-          </div>
-
-          
-          {/* */}
-
-        </motion.div>
-       
       </div>
-      {/* Projects Section */}
+
+      {/* -----------------------------------Next Section------------------------------------------ */}
       
+
+      <section className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px]'>
+       {/*------------------------------ 1st Motion div of 2nd Section------------------------------------------------------  */}
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[100%] md:basis-[50%] md:pt-40 py-12 px-10 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+          <div className=" text-zinc-800 font-sans">
+            <div className='md:flex ml-5 md:flex-col mb-7'>
+              <h1 className='md:mt-5 text-lg'>Things I Know</h1>
+            </div>
+            <div className='ml-4 md:ml-[20px] flex md:flex-row mx-auto gap-7'>
+              <FaJsSquare size={40} />
+              <FaReact size={40} />
+              <FaGit size={40} />
+              <FaPython size={40} />
+              <DiMongodb size={40} />
+              <DiNodejsSmall size={40} />
+
+
+            </div>
+
+          </div>
+        </motion.div>
+
+            {/*----------------------------------------------- 2nd Motion div of 2nd section ------------------------------------------------------- */}
+
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[100%] md:basis-[39.5%] md:pt-40 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+          <div className=" text-zinc-800 font-sans">
+            <div className='md:flex ml-5 md:flex-col mb-7'>
+              <h1 className='md:mt-5 text-2xl'>Hire Me</h1>
+            </div>
+            <div className='relative ml-4 md:ml-[18px] flex md:flex-row mx-auto gap-7'>
+              <h1 className='text-bolder text-5xl'>Get In Touch</h1>
+              <button type='button'><HiArrowCircleRight className='absolute left-[17rem] top-[3rem] md:left-[22rem] md:top-[1rem]' size={60}/></button>
+            </div>
+
+          </div>
+        </motion.div>
+      </section>
+
+
       <div>
-        <Contact />
+        <Footer />
       </div>
 
     </div>
