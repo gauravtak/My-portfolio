@@ -41,19 +41,18 @@ export default function Contact() {
 
   return (
     <div className='text-center'>
-      <h1 className='m-14  text-fuchsia-400 font-extrabold text-[25px] lg:text-[40px]'>Contacts</h1>
       <motion.div ref={ref} variants={boxVariant} initial='hidden' animate={control} className='flex justify-center overflow-x-auto'>
-        <div className=' md:py-14 md:px-14 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
-          <a href=""><FaTwitter size={50} /></a>
+        <div className=' md:py-4 md:px-4 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
+          <a href=""><FaTwitter size={20} /></a>
         </div>
-        <div className=' md:py-14 md:px-14 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
-          <a href=""><FaGithub size={50} /></a>
+        <div className=' md:py-4 md:px-4 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
+          <a href=""><FaGithub size={20} /></a>
         </div>
-        <div className=' md:py-14 md:px-14 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
-          <a href=""><FaInstagram size={50} /></a>
+        <div className=' md:py-4 md:px-4 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
+          <a href=""><FaInstagram size={20} /></a>
         </div>
-        <div className=' md:py-14 md:px-14 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
-          <a href=""><FaLinkedin size={50} /></a>
+        <div className=' md:py-4 md:px-4 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
+          <a href=""><FaLinkedin size={20} /></a>
         </div>
       </motion.div>
 
