@@ -10,6 +10,7 @@ import { FaTwitter, FaGit, FaJsSquare, FaReact, FaPython } from "react-icons/fa"
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { DiMongodb, DiNodejsSmall, DiStackoverflow } from "react-icons/di";
 import { HiArrowCircleRight } from "react-icons/hi";
+import Header from './Header';
 
 // https://rxresu.me/gauravtak996/gaurav-tak //Resume link
 
@@ -41,19 +42,7 @@ export default function Home() {
 
   return (
     <div>
-      <div>
-
-
-        <ul className='flex flex-row justify-center'>
-          <Link href="/"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] md:text-[20px]' >Home</li></Link>
-          <Link href="/projects"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] md:text-[20px]' >Projects</li></Link>
-          <Link href="/contact"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] md:text-[20px]'>Contact</li></Link>
-
-
-
-
-        </ul>
-      </div>
+      <Header/>
 
 
       <div className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px]'>
