@@ -1,13 +1,18 @@
 import styles from '@/styles/Home.module.css'
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import {Kalam} from '@next/font/google';
 
 
-
+const kalam = Kalam({
+  subsets:['latin'],
+  display:'swap',
+  weight: '400'
+})
 
 export default function Header() {
     return(
-        <div>
+        <div className={kalam.className}>
 
 
         <ul className='flex flex-row justify-center'>

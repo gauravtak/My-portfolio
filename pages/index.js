@@ -11,8 +11,14 @@ import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { DiMongodb, DiNodejsSmall, DiStackoverflow } from "react-icons/di";
 import { HiArrowCircleRight } from "react-icons/hi";
 import Header from './Header';
+import {Amatic_SC} from '@next/font/google';
 
 // https://rxresu.me/gauravtak996/gaurav-tak //Resume link
+
+const amatic = Amatic_SC({
+  subsets: ['latin'],
+  weight: ['400', '700']
+})
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
