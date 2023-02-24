@@ -52,7 +52,7 @@ export default function Contact() {
                 <input className='rounded-lg p-2' type="text" placeholder='Name' />
                 <input className='rounded-lg p-2' type="email" name="" id="" placeholder='Email' />
                 <textarea className='rounded-lg p-2' type="text" placeholder='Message' />
-                <button type='button' className=' p-2 bg-gray-600 hover:bg-gradient-to-tr from-pink-400 to-red-400 hover:rounded-lg'>SEND E-MAIL</button>
+                <button type='button' className='transition-all ease-in-out shadow-xl duration-300 p-2 bg-fuchsia-500 hover:bg-gradient-to-tr hover:from-pink-400 hover:to-red-400 hover:rounded-lg'>Send Message</button>
 
             </motion.div>
          </div>

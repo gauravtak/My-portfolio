@@ -11,9 +11,9 @@ export default function Header() {
 
 
         <ul className='flex flex-row justify-center'>
-          <Link href="/"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] md:text-[20px]' >Home</li></Link>
-          <Link href="/projects"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] md:text-[20px]' >Projects</li></Link>
-          <Link href="/contact"><li className='ml-3 p-2 text-white hover:text-fuchsia-400 font-extrabold text-[15px] md:text-[20px]'>Contact</li></Link>
+          <Link href="/"><li className='ml-3 p-2 text-white hover:text-pink-400  font-extrabold text-[15px] md:text-[20px]' >Home</li></Link>
+          <Link href="/projects"><li className='ml-3 p-2 text-white hover:text-pink-400 font-extrabold text-[15px] md:text-[20px]' >Projects</li></Link>
+          <Link href="/contact"><li className='ml-3 p-2 text-white hover:text-pink-400 font-extrabold text-[15px] md:text-[20px]'>Contact</li></Link>
 
 
 
