@@ -42,7 +42,7 @@ export default function Contact() {
 
   return (
     <div className='text-center mt-20'>
-    <h1 className=' text-fuchsia-700 font-bold text-[25px] md:text-[30px] mb-12'>Portfolio</h1>
+    <h1 className=' bg-gradient-to-r from-red-300 via-fuchsia-300 to bg-blue-200 text-transparent bg-clip-text inline-block font-bold text-[25px] md:text-[30px] mb-12'>Portfolio</h1>
       
 
     <Social/>
@@ -50,7 +50,7 @@ export default function Contact() {
 
       <section className='md:flex my-4 text-center md:justify-center md:gap-4'>
         <h2 className=' text-white mt-16 mb-6 md:my-0'>copyright @ 2023</h2>
-        <p className=' text-white mb-7'>Created by <span className=' text-fuchsia-600'>Gaurav Tak</span></p>
+        <p className=' text-white mb-7'>Created by <span className='hover:text-fuchsia-600'>Gaurav Tak</span></p>
       </section>
 
 
