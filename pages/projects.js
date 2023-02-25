@@ -1,48 +1,48 @@
-import styles from '@/styles/Home.module.css'
-import { useRef } from 'react'
-import { HiArrowCircleRight,HiArrowCircleLeft } from "react-icons/hi";
+import styles from '@/styles/Home.module.css';
+import Header from "./Header";
+import Footer from "./footer";
+import { useEffect } from 'react';
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+
+
+const boxVariant = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 }
+}
 
 
 export default function Projects() {
-// Need to add left and right scroll with buttons
-    const ref = useRef(null)
+    const control = useAnimation();
 
-    const scroll = (scrollOffSet) => {
-        ref.current.scrollLeft += scrollOffSet; // getting and setting scrolll value 
-        console.log(scrollOffSet)
-    }
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+        if (inView) {
+            control.start("visible")
+        }
+        // else {
+        //   control.start("hidden")
+        // }
+
+    }, [control, inView]);
 
 
 
     return (
-        <div className='text-center'>
-            <h1 className='py-4 m-20 text-fuchsia-400 font-extrabold text-[25px] lg:text-[40px]'>My Projects</h1>
+        <div>
 
-            <div className=' md:mx-40' ref={ref}>
-                <div className='snap-x snap-mandatory gap-10 flex overflow-x-scroll' >
-                    <div className='snap-center flex-shrink-0'>
-                        <img src="/1.jpg" />
-                    </div>
-                    <div className='snap-center flex-shrink-0'>
-                        <img src="/1.jpg" />
-                    </div>
+            <Header />
+            <section className='flex'>
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[50%] md:basis-[50%] md:pt-40 py-12 mx-7 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+                    <h1 className='text-center text-2xl font-bold'>Rock Paper Scissors</h1>
+                </motion.div>
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[50%] md:basis-[50%] md:pt-40 py-12 mx-7 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+                    <h1 className='text-center text-2xl font-bold'>Sign Up page with Authentication and Security</h1>
+                </motion.div>
+            </section>
 
-                    <div className='snap-center flex-shrink-0'>
-                        <img src="/1.jpg" />
-                    </div>
-
-                    <div className='snap-center flex-shrink-0'>
-                        <img src="/1.jpg" />
-                    </div>
-                    <div className='snap-center flex-shrink-0'>
-                        <img src="/1.jpg" />
-                    </div>
-                </div>
-            </div>
-            <div className='mt-10 text-white'>
-                <button className='transition-all ease-in-out hover:translate-y-2 duration-300 hover:scale-100' onClick={() => scroll(-20)}><HiArrowCircleLeft size={70}/></button>
-                <button className='transition-all ease-in-out hover:translate-x-2 duration-300 hover:scale-100' onClick={() => scroll(20)}><HiArrowCircleRight size={70} color={'#038ffff'}/></button>
-            </div>
+            <Footer/>
 
         </div>
     )

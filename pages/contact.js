@@ -37,7 +37,7 @@ export default function Contact() {
 
     }, [control, inView]);
     return (
-        <section className=''>
+        <section className='font-Comfortaa'>
          <Header/>
          <div className='flex md:flex-row flex-col '>
          <div className='m-12 md:basis-[50%]'>
@@ -51,7 +51,7 @@ export default function Contact() {
             <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' flex flex-col gap-10 basis-[100%] md:basis-[50%] md:mr-12 md:mb-16 py-16 px-10 my-10 mx-10  bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
                 <input className='rounded-lg p-2' type="text" placeholder='Name' />
                 <input className='rounded-lg p-2' type="email" name="" id="" placeholder='Email' />
-                <textarea className='rounded-lg p-2' type="text" placeholder='Message' />
+                <textarea height={50} className='rounded-lg p-2' type="text" placeholder='Message' />
                 <button type='button' className='transition-all ease-in-out shadow-xl duration-300 p-2 bg-fuchsia-500 hover:bg-gradient-to-tr hover:from-pink-400 hover:to-red-400 hover:rounded-lg'>Send Message</button>
 
             </motion.div>

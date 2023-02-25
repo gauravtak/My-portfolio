@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -9,10 +10,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    fontFamily:{
-      sans:['Helvetica', 'sans-serif'],
+    extend: {
+      fontFamily:{
+      "Rubik":["Rubik", ...defaultTheme.fontFamily.sans],
+      "Labrada": ["Labrada", ...defaultTheme.fontFamily.sans],
+      "Comfortaa": ["Comfortaa", ...defaultTheme.fontFamily.sans],
+        },
     },
+    
   },
   plugins: [],
 }
