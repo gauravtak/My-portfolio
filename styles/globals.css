@@ -4,8 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 
+/* #c53661  reddish-pinkish  */
+/* #705276 dark-faded-purple */
+
 body{
-    background-image: url('../public/space.gif');
+    /* background-image: url('../public/space.gif'); */
+    background-color: #9b557a;
     background-attachment: fixed;
     
 }
