@@ -37,7 +37,7 @@ export default function Contact() {
   //   }
   // }, [control, inView])
 
-
+  const year = new Date().getFullYear();
 
 
 
@@ -50,7 +50,7 @@ export default function Contact() {
     {/* bg-gradient-to-tr from-red-500 via-pink-200 to-red-600 */}
 
       <section className='md:flex my-4 text-center md:justify-center md:gap-4 font-Comfortaa'>
-        <h2 className=' text-gray-400 mt-16 mb-6 md:my-0'>© 2023</h2>
+        <h2 className=' text-gray-400 mt-16 mb-6 md:my-0'>© {year}</h2>
         <p className=' text-gray-400 mb-7'>Created by <span className='hover:text-cyan-400'>Gaurav Tak</span></p>
         <span className='mr-2 md:mr-0'>Inspired by</span><Link href={"https://gridfolio.framer.website/"}>Gridfolio</Link>
       </section>
