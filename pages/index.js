@@ -57,7 +57,7 @@ export default function Home() {
       <Header/>
 
 
-      <div className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[150px]'>
+      <div className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px]'>
 
         {/*------------------------------------------ 1st Motion div --------------------------------------------------------- */}
        {/* <div className='transition-all duration-200 hover:scale-125'> */}
