@@ -33,11 +33,11 @@ export default function Projects() {
         <div>
 
             <Header />
-            <section className='flex'>
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[50%] md:basis-[50%] md:pt-40 py-12 mx-7 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+            <section className='flex m-10 flex-col md:flex-row gap-4'>
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[50%] md:basis-[30%] md:pt-40 py-12 mx-7 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
                     <h1 className='text-center text-2xl font-bold'>Rock Paper Scissors</h1>
                 </motion.div>
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[50%] md:basis-[50%] md:pt-40 py-12 mx-7 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[50%] md:basis-[30%] md:pt-40 py-12 mx-7 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
                     <h1 className='text-center text-2xl font-bold'>Sign Up page with Authentication and Security</h1>
                 </motion.div>
             </section>

@@ -9,8 +9,9 @@
   /* #9b557a */
 
  body {
-    background-image: url('../public/space.gif');
-     /* background-color: #c53661; */
+    /* background-image: url('../public/space.gif'); */
+     /* background-color: #7ad081; */
+     background-image: linear-gradient(to top right, rgb(234, 103, 103),rgb(231, 98, 120),rgb(66, 126, 203));
     background-attachment: fixed;
  }  
 
@@ -40,7 +41,7 @@
 
 .portfolio{
      margin : 20px 30px 15px 30px;
-    background-image: linear-gradient(90deg,#ffff 50%,transparent 0),linear-gradient(90deg,#3fe80c 50%,transparent 0),linear-gradient(180deg,#1fc3a5 50%,transparent 0),linear-gradient(180deg,#136dda 50%,transparent 0);
+    background-image: linear-gradient(90deg,#ffff 50%,transparent 0),linear-gradient(90deg,#000 50%,transparent 0);
     background-position: 0 0,0 100%,0 0,100% 0;
     background-repeat: repeat-x,repeat-x,repeat-y,repeat-y;
     background-size: 30px 1px,30px 1px,1px 30px,1px 30px;
@@ -68,12 +69,3 @@
 }
 
 
-/* .arrow{
-    animation: .4s infinite normal b;
-}
-
-@keyframes b{
-    rotate{
-
-    }
-} */
