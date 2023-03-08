@@ -57,7 +57,7 @@ export default function Home() {
       <Header/>
 
 
-      <div className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px]'>
+      <div className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[150px]'>
 
         {/*------------------------------------------ 1st Motion div --------------------------------------------------------- */}
        {/* <div className='transition-all duration-200 hover:scale-125'> */}
@@ -100,8 +100,12 @@ export default function Home() {
 
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           <div className="text-zinc-800">
+<<<<<<< HEAD
             <div className='relative flex ml-40 md:ml-2 md:flex-col '> 
              {/* ssm:mx-24 */}
+=======
+            <div className='relative flex ml-40 md:ml-2 md:flex-col ssm:mx-24'>
+>>>>>>> aaaa828340c75ad9cf2cabbb9a6bcac6c1de702e
               <Link href={'https://twitter.com/ALLOY992'}><FaTwitter className=' md:mt-10 transition-all duration-200 hover:scale-110' size={100} /></Link>
               <Link href={'https://twitter.com/ALLOY992'}><button type='button'><HiArrowCircleRight className='hover:animate-spin absolute ssm:left-[7rem] right-4 top-[5rem]  md:left-[5rem] md:top-[10rem]' size={60}/></button></Link>
             </div>
@@ -118,8 +122,12 @@ export default function Home() {
 
       <section className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px]'>
        {/*------------------------------ Things I know Section------------------------------------------------------  */}
+<<<<<<< HEAD
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' basis-[100%] md:basis-[50%] md:pt-40 py-12 px-10 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
         {/* ssm:pl-2 */}
+=======
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='ssm:pl-2 basis-[100%] md:basis-[50%] md:pt-40 py-12 px-10 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+>>>>>>> aaaa828340c75ad9cf2cabbb9a6bcac6c1de702e
           <div className=" text-zinc-800 font-sans">
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 text-lg font-Comfortaa'>Things I Know</h1>
@@ -147,7 +155,11 @@ export default function Home() {
             </div>
             <div className='relative flex md:flex-row'>
               <h1 className='text-bolder md:text-5xl md:mr-[6.8rem] mx-auto text-3xl font-Comfortaa'>Get In Touch</h1>
+<<<<<<< HEAD
               <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem]  top-[2rem] md:left-[23.5rem] md:top-[1rem]' size={60}/></button></Link>
+=======
+              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] ssm:left-[10.5rem] top-[2rem] md:left-[23.5rem] md:top-[1rem]' size={60}/></button></Link>
+>>>>>>> aaaa828340c75ad9cf2cabbb9a6bcac6c1de702e
             </div>
             {/* ssm:left-[10.5rem] */}
 
