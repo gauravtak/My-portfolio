@@ -86,7 +86,7 @@ export default function Home() {
               
 
               {/* <button type='button' onClick={() => router.push('/resume')} className='transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl hover:bg-gradient-to-tr from-pink-400 to-red-400 md:m-0  md:mx-auto md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button> */}
-              <Link href={"https://rxresu.me/gauravtak996/gaurav-tak"}><button type='button' className='font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl hover:bg-gradient-to-tr from-pink-400 to-red-400 md:m-0  md:mx-auto md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
+              <Link href={"https://rxresu.me/gauravtak996/gaurav-tak"}><button type='button' className='font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl hover:bg-gradient-to-tr from-pink-400 to-red-400 md:m-0  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
               
 
             </div>
@@ -101,7 +101,7 @@ export default function Home() {
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           <div className="text-zinc-800">
             <div className='relative flex ml-40 md:ml-2 md:flex-col'>
-              <Link href={'https://twitter.com/ALLOY992'}><FaTwitter className='md:mt-12 transition-all duration-200 hover:scale-110' size={100} /></Link>
+              <Link href={'https://twitter.com/ALLOY992'}><FaTwitter className='md:mt-10 transition-all duration-200 hover:scale-110' size={100} /></Link>
               <Link href={'https://twitter.com/ALLOY992'}><button type='button'><HiArrowCircleRight className='hover:animate-spin absolute right-4 top-[5rem]  md:left-[5rem] md:top-[10rem]' size={60}/></button></Link>
             </div>
 
@@ -122,7 +122,7 @@ export default function Home() {
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 text-lg font-Comfortaa'>Things I Know</h1>
             </div>
-            <div className='ml-4 md:ml-[20px] flex md:flex-row mx-auto gap-7'>
+            <div className='ml-4 md:ml-[20px] flex md:flex-row mx-auto gap-4'>
               <Link href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}><FaJsSquare size={40} /></Link>
               <Link href={'https://reactjs.org/'}><FaReact size={40} /></Link>
               <Link href={'https://git-scm.com/'}><FaGit size={40} /></Link>
@@ -141,11 +141,11 @@ export default function Home() {
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[100%] md:basis-[39.5%] md:pt-40 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-4 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           <div className=" text-zinc-800 font-sans">
             <div className='md:flex ml-5 md:flex-col mb-7'>
-              <h1 className='md:mt-5 text-2xl font-Comfortaa'>Hire Me</h1>
+              <h1 className='md:mt-5 mr-7 text-2xl font-Comfortaa'>Hire Me</h1>
             </div>
-            <div className='relative ml-4 md:ml-[18px] flex md:flex-row mx-auto gap-7'>
-              <h1 className='text-bolder text-5xl font-Comfortaa'>Get In Touch</h1>
-              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[17rem] top-[3rem] md:left-[22rem] md:top-[1rem]' size={60}/></button></Link>
+            <div className='relative flex md:flex-row'>
+              <h1 className='text-bolder md:text-5xl md:mr-[6.8rem] mx-auto text-3xl font-Comfortaa'>Get In Touch</h1>
+              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] top-[2rem] md:left-[23.5rem] md:top-[1rem]' size={60}/></button></Link>
             </div>
 
           </div>
