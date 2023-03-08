@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Header() {
     return(
-        <div className='font-Comfortaa'>
+        <div className='font-Comfortaa mt-4'>
 
 
         <ul className='flex flex-row justify-center'>
