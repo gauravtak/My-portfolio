@@ -16,8 +16,11 @@ module.exports = {
       "Labrada": ["Labrada", ...defaultTheme.fontFamily.sans],
       "Comfortaa": ["Comfortaa", ...defaultTheme.fontFamily.sans],
         },
+
     },
     
   },
   plugins: [],
 }
+
+
