@@ -1,6 +1,5 @@
 import styles from '@/styles/Home.module.css'
-import Projects from '../pages/projects.js';
-import Image from "next/image";
+import Projects from '../pages/projects.js'
 import Footer from "../pages/footer.js";
 import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
@@ -64,7 +63,7 @@ export default function Home() {
        {/* <div className='transition-all duration-200 hover:scale-125'> */}
        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='card basis-[100%] md:basis-[40%] py-12 px-10 m-10 md:mx-1 md:mb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg '>
           <div className=" text-zinc-800 font-sans ">
-            <Image src={"https://www.meme-arsenal.com/memes/5ee99d558641255d6e670bbd54953397.jpg"} className='transition-all duration-200 hover:scale-150 shadow-2xl my-4 md:my-2 md:ml-4 mx-auto w-20 rounded-full'/>
+            <img className='transition-all duration-200 hover:scale-150 shadow-2xl my-4 md:my-2 md:ml-4 mx-auto w-20 rounded-full' src="https://www.meme-arsenal.com/memes/5ee99d558641255d6e670bbd54953397.jpg" alt="flower" />
             <div className='md:flex ml-5 md:flex-col'>
               <h1 className='md:mt-5 text-3xl font-bold font-Comfortaa'>Hi, This is Gaurav</h1>
               <p className='md:pr-40 md:mb-4 mt-4 font-Comfortaa'>A Frontend Web Developer</p>
