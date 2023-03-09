@@ -52,7 +52,7 @@ export default function Home() {
 
 
   return (
-    <div className='lg:ml-16 md:ml-7'>
+    <div className='lg:ml-20 md:ml-2'>
       <Header/>
 
 
@@ -80,7 +80,7 @@ export default function Home() {
             <div className='md:flex ml-2 md:flex-col '>
             <div className=' transition-all duration-200 hover:scale-110'>
             <HiOutlineClipboardDocumentList className='mx-auto' size={80} />
-              <h1 className=' mb-5 text-2xl font-bold font-Comfortaa'>See My Resume</h1>
+              <h1 className=' mb-5 md:pl-4 text-2xl font-bold font-Comfortaa'>See My Resume</h1>
             </div>
               
 
@@ -99,10 +99,10 @@ export default function Home() {
 
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           <div className="text-zinc-800">
-            <div className='relative flex ml-40 md:ml-2 md:flex-col md:p-4'> 
+            <div className='relative flex ml-40 md:ml-2 md:flex-col md:p-[1rem] sm:inline-block sm:mx-auto'> 
              {/* ssm:mx-24 */}
-              <Link href={'https://twitter.com/ALLOY992'}><FaTwitter className=' md:mt-6 transition-all duration-200 hover:scale-110' size={100} /></Link>
-              <Link href={'https://twitter.com/ALLOY992'}><button type='button'><HiArrowCircleRight className='hover:animate-spin absolute right-4 top-[5rem]  md:left-[7rem] md:top-[10rem]' size={60}/></button></Link>
+              <Link href={'https://twitter.com/ALLOY992'}><FaTwitter className=' md:mt-6 transition-all duration-200 hover:scale-110 sm:w-[5.5rem]' size={100} /></Link>
+              <Link href={'https://twitter.com/ALLOY992'}><button type='button'><HiArrowCircleRight className='hover:animate-spin absolute right-4 top-[5rem]  md:left-[7rem] md:top-[10rem] sm:right-[0.5rem] sm:mt-4' size={60}/></button></Link>
             </div>
            
           </div>
@@ -123,13 +123,13 @@ export default function Home() {
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 text-lg font-Comfortaa'>Things I Know</h1>
             </div>
-            <div className='ml-4 md:ml-[20px] flex md:flex-row mx-auto gap-4'>
-              <Link href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}><FaJsSquare size={40} /></Link>
-              <Link href={'https://reactjs.org/'}><FaReact size={40} /></Link>
-              <Link href={'https://git-scm.com/'}><FaGit size={40} /></Link>
-              <Link href={'https://www.python.org/'}><FaPython size={40} /></Link>
-              <Link href={'https://www.mongodb.com/'}><DiMongodb size={40} /></Link>
-              <Link href={'https://nodejs.org/en/'}><DiNodejsSmall size={40} /></Link>
+            <div className='ml-4 md:ml-[20px] sm:ml-[0.2px] flex md:flex-row mx-auto gap-4 mmd:ml-[29rem]'>
+              <Link  href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}><FaJsSquare className='sm:w-[1.6rem]' size={40} /></Link>
+              <Link  href={'https://reactjs.org/'}><FaReact className='sm:w-[1.6rem]' size={40} /></Link>
+              <Link  href={'https://git-scm.com/'}><FaGit className='sm:w-[1.6rem]' size={40} /></Link>
+              <Link  href={'https://www.python.org/'}><FaPython className='sm:w-[1.6rem]' size={40} /></Link>
+              <Link  href={'https://www.mongodb.com/'}><DiMongodb className='sm:w-[1.6rem]' size={40} /></Link>
+              <Link  href={'https://nodejs.org/en/'}><DiNodejsSmall className='sm:w-[1.6rem]' size={40} /></Link>
 
 
             </div>
@@ -139,14 +139,14 @@ export default function Home() {
 
             {/*----------------------------------------------- Hire Me section ------------------------------------------------------- */}
 
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[100%] lg:basis-[37.3%] md:basis-[38.7%] md:pt-20 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-7 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
-          <div className=" text-zinc-800 font-sans">
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[100%] lg:basis-[37.3%] md:basis-[38%] md:pt-20 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-7 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+          <div className=" text-zinc-800 font-sans sm:pb-6">
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 mr-7 text-2xl font-Comfortaa'>Hire Me</h1>
             </div>
             <div className='relative flex md:flex-row'>
               <h1 className='text-bolder md:text-5xl inline-block md:ml-4 mx-auto text-3xl font-Comfortaa'>Get In Touch</h1>
-              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] lg:left-[30.5rem]  top-[2rem] md:left-[22rem] md:top-[1rem]' size={60}/></button></Link>
+              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] lg:left-[29rem]  top-[2rem] md:left-[18.7rem] md:top-[1rem] sm:w-[10rem] sm:left-[2.2rem] sm:top-[3rem] mmd:left-[30rem]' size={60}/></button></Link>
             </div>
             {/* ssm:left-[10.5rem] */}
 
