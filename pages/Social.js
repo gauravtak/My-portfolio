@@ -27,19 +27,19 @@ export default function Social() {
     }, [control, inView])
     return (
         <motion.div ref={ref} variants={boxVariant} initial='hidden' animate={control} className='flex gap-7 justify-center overflow-x-auto'>
-            <div className='px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
+            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
                 <a href=""><FaTwitter size={20} /></a>
             </div>
-            <div className='px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
+            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
                 <a href=""><FaGithub size={20} /></a>
             </div>
-            <div className='px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
+            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
                 <a href=""><FaInstagram size={20} /></a>
             </div>
-            <div className='px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
+            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
                 <a href=""><FaLinkedin size={20} /></a>
             </div>
-            <div className='px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 sm:py-4 sm:px-4 sm:gap-4 sm:m-4  bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
+            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
                 <a href=""><FaTelegram size={20} /></a>
             </div>
         </motion.div>
