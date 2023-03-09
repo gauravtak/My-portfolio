@@ -57,7 +57,7 @@ export default function Home() {
       <Header/>
 
 
-      <div className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px]'>
+      <div className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px] '>
 
         {/*------------------------------------------ 1st Motion div --------------------------------------------------------- */}
        {/* <div className='transition-all duration-200 hover:scale-125'> */}
@@ -103,7 +103,7 @@ export default function Home() {
             <div className='relative flex ml-40 md:ml-2 md:flex-col '> 
              {/* ssm:mx-24 */}
               <Link href={'https://twitter.com/ALLOY992'}><FaTwitter className=' md:mt-10 transition-all duration-200 hover:scale-110' size={100} /></Link>
-              <Link href={'https://twitter.com/ALLOY992'}><button type='button'><HiArrowCircleRight className='hover:animate-spin absolute ssm:left-[7rem] right-4 top-[5rem]  md:left-[5rem] md:top-[10rem]' size={60}/></button></Link>
+              <Link href={'https://twitter.com/ALLOY992'}><button type='button'><HiArrowCircleRight className='hover:animate-spin absolute right-4 top-[5rem]  md:left-[5rem] md:top-[10rem]' size={60}/></button></Link>
             </div>
            
           </div>
@@ -116,7 +116,7 @@ export default function Home() {
       {/* -----------------------------------Next Section------------------------------------------ */}
       
 
-      <section className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px]'>
+      <section className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px] '>
        {/*------------------------------ Things I know Section------------------------------------------------------  */}
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' basis-[100%] md:basis-[50%] md:pt-40 py-12 px-10 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
         {/* ssm:pl-2 */}
@@ -124,7 +124,7 @@ export default function Home() {
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 text-lg font-Comfortaa'>Things I Know</h1>
             </div>
-            <div className='ml-4 md:ml-[20px] flex md:flex-row mx-auto gap-4 ssm:gap-[0.8px]'>
+            <div className='ml-4 md:ml-[20px] flex md:flex-row mx-auto gap-4'>
               <Link href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}><FaJsSquare size={40} /></Link>
               <Link href={'https://reactjs.org/'}><FaReact size={40} /></Link>
               <Link href={'https://git-scm.com/'}><FaGit size={40} /></Link>
