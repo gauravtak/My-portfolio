@@ -117,13 +117,13 @@ export default function Home() {
 
       <section className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px] '>
        {/*------------------------------ Things I know Section------------------------------------------------------  */}
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' basis-[100%] md:basis-[50%] md:pt-40 py-12 px-10 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' basis-[100%] md:basis-[50%] md:pt-40 py-12 px-6 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
         {/* ssm:pl-2 */}
           <div className=" text-zinc-800 font-sans">
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 text-lg font-Comfortaa'>Things I Know</h1>
             </div>
-            <div className='ml-4 md:ml-[20px] sm:ml-[0.2px] flex md:flex-row mx-auto gap-4 mmd:ml-[29rem]'>
+            <div className='ml-4 md:ml-[20px] sm:ml-[0.1px] flex md:flex-row mx-auto gap-4 mmd:ml-[29rem]'>
               <Link  href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}><FaJsSquare className='sm:w-[1.6rem]' size={40} /></Link>
               <Link  href={'https://reactjs.org/'}><FaReact className='sm:w-[1.6rem]' size={40} /></Link>
               <Link  href={'https://git-scm.com/'}><FaGit className='sm:w-[1.6rem]' size={40} /></Link>
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div className='relative flex md:flex-row'>
               <h1 className='text-bolder md:text-5xl inline-block md:ml-4 mx-auto text-3xl font-Comfortaa'>Get In Touch</h1>
-              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] lg:left-[29rem]  top-[2rem] md:left-[18.7rem] md:top-[1rem] sm:w-[10rem] sm:left-[2.2rem] sm:top-[3rem] mmd:left-[30rem]' size={60}/></button></Link>
+              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] lg:left-[29rem]  top-[2rem] md:left-[18.7rem] md:top-[1rem] sm:w-[10rem] sm:left-[1rem] sm:top-[5rem] mmd:left-[30rem]' size={60}/></button></Link>
             </div>
             {/* ssm:left-[10.5rem] */}
 
