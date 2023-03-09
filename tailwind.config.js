@@ -10,12 +10,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    screens:{
+    // screens:{
     //   'ssm': '376.51px',
     //    // => @media (min-width: 376.51px){...}
-        // 'lgs' : '1920px',
-         // => @media (min-width: 1920px)
-     },
+    // },
     extend: {
       fontFamily:{
       "Rubik":["Rubik", ...defaultTheme.fontFamily.sans],
