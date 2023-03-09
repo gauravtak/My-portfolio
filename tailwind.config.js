@@ -10,6 +10,8 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+     screens:{
+     },
     extend: {
       fontFamily:{
       "Rubik":["Rubik", ...defaultTheme.fontFamily.sans],

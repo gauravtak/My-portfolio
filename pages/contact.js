@@ -2,7 +2,6 @@ import styles from '@/styles/Home.module.css';
 import Projects from '../pages/projects.js';
 import Footer from "../pages/footer.js";
 import Header from "./Header";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
