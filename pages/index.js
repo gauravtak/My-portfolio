@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div className='relative flex md:flex-row'>
               <h1 className='text-bolder md:text-5xl inline-block md:ml-4 mx-auto text-3xl font-Comfortaa'>Get In Touch</h1>
-              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] lg:left-[29rem]  top-[2rem] md:left-[18.7rem] md:top-[1rem] sm:w-[10rem] sm:left-[1rem] sm:top-[5rem] mmd:left-[30rem]' size={60}/></button></Link>
+              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] lg:left-[29rem]  top-[2rem] md:left-[18.7rem] md:top-[1rem] sm:w-[10rem] sm:left-[1.5rem] sm:top-[3rem] mmd:left-[30rem]' size={60}/></button></Link>
             </div>
             {/* ssm:left-[10.5rem] */}
 
