@@ -1,4 +1,3 @@
-import styles from '@/styles/Home.module.css'
 import Projects from '../pages/projects.js'
 import Footer from "../pages/footer.js";
 import { useEffect } from 'react';
@@ -53,15 +52,15 @@ export default function Home() {
 
 
   return (
-    <div>
+    <div className='lg:ml-16 md:ml-7'>
       <Header/>
 
 
-      <div className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px] '>
+      <div className='flex flex-col md:flex-row text-center mt-10 md:text-left min-h-[55vh] md:ml-[100px]  '>
 
         {/*------------------------------------------ 1st Motion div --------------------------------------------------------- */}
        {/* <div className='transition-all duration-200 hover:scale-125'> */}
-       <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='card basis-[100%] md:basis-[40%] py-12 px-10 m-10 md:mx-1 md:mb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg '>
+       <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='card basis-[100%] lg:basis-[50%] md:basis-[37%] py-12 px-10 m-10 md:mx-1 md:mb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg '>
           <div className=" text-zinc-800 font-sans ">
             <img className='transition-all duration-200 hover:scale-150 shadow-2xl my-4 md:my-2 md:ml-4 mx-auto w-20 rounded-full' src="https://www.meme-arsenal.com/memes/5ee99d558641255d6e670bbd54953397.jpg" alt="flower" />
             <div className='md:flex ml-5 md:flex-col'>
@@ -71,17 +70,17 @@ export default function Home() {
 
           </div>
         </motion.div>
-       {/* </div> */}st
+       {/* </div> */}
        
 
         {/*---------------------------------------- 2nd Motion div ----------------------------------------------*/}
 
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' mx-10 py-12 md:py-10 md:px-12 md:my-10 md:mx-5 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
-          <div className=" text-zinc-800 font-sans">
+          <div className=" text-zinc-800 font-sans inline-block md:mt-10">
             <div className='md:flex ml-2 md:flex-col '>
             <div className=' transition-all duration-200 hover:scale-110'>
             <HiOutlineClipboardDocumentList className='mx-auto' size={80} />
-              <h1 className='md:mt-5 mb-5 text-3xl font-bold font-Comfortaa'>See My Resume</h1>
+              <h1 className=' mb-5 text-2xl font-bold font-Comfortaa'>See My Resume</h1>
             </div>
               
 
@@ -100,10 +99,10 @@ export default function Home() {
 
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           <div className="text-zinc-800">
-            <div className='relative flex ml-40 md:ml-2 md:flex-col '> 
+            <div className='relative flex ml-40 md:ml-2 md:flex-col md:p-4'> 
              {/* ssm:mx-24 */}
-              <Link href={'https://twitter.com/ALLOY992'}><FaTwitter className=' md:mt-10 transition-all duration-200 hover:scale-110' size={100} /></Link>
-              <Link href={'https://twitter.com/ALLOY992'}><button type='button'><HiArrowCircleRight className='hover:animate-spin absolute right-4 top-[5rem]  md:left-[5rem] md:top-[10rem]' size={60}/></button></Link>
+              <Link href={'https://twitter.com/ALLOY992'}><FaTwitter className=' md:mt-6 transition-all duration-200 hover:scale-110' size={100} /></Link>
+              <Link href={'https://twitter.com/ALLOY992'}><button type='button'><HiArrowCircleRight className='hover:animate-spin absolute right-4 top-[5rem]  md:left-[7rem] md:top-[10rem]' size={60}/></button></Link>
             </div>
            
           </div>
@@ -140,14 +139,14 @@ export default function Home() {
 
             {/*----------------------------------------------- Hire Me section ------------------------------------------------------- */}
 
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[100%] md:basis-[39.5%] md:pt-40 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-4 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[100%] lg:basis-[37.3%] md:basis-[38.7%] md:pt-20 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-7 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           <div className=" text-zinc-800 font-sans">
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 mr-7 text-2xl font-Comfortaa'>Hire Me</h1>
             </div>
             <div className='relative flex md:flex-row'>
-              <h1 className='text-bolder md:text-5xl md:mr-[6.8rem] mx-auto text-3xl font-Comfortaa'>Get In Touch</h1>
-              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem]  top-[2rem] md:left-[23.5rem] md:top-[1rem]' size={60}/></button></Link>
+              <h1 className='text-bolder md:text-5xl inline-block md:ml-4 mx-auto text-3xl font-Comfortaa'>Get In Touch</h1>
+              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] lg:left-[30.5rem]  top-[2rem] md:left-[22rem] md:top-[1rem]' size={60}/></button></Link>
             </div>
             {/* ssm:left-[10.5rem] */}
 
