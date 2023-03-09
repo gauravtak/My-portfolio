@@ -11,7 +11,6 @@ module.exports = {
   ],
   theme: {
      screens:{
-
      },
     extend: {
       fontFamily:{
