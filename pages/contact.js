@@ -3,11 +3,12 @@ import Projects from '../pages/projects.js';
 import Footer from "../pages/footer.js";
 import Header from "./Header";
 import Link from "next/link";
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
-import mypic from "../public/pixelgoku.png"
+import mypic from "../public/pixelgoku.png";
+import emailjs from '@emailjs/browser';
 
 
 
@@ -31,9 +32,32 @@ export default function Contact() {
         }
         // else {
         //   control.start("hidden")
-        // }
+        //service_nn3jgqq }
 
     }, [control, inView]);
+
+
+
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_nn3jgqq', 'template_pf3twos', form.current, '3cokTcxKKTUxhh18r')
+            .then((result) => {
+                alert("Your message sent successfully");
+            }).catch((err) => {
+                alert(err);
+            });
+    }
+
+
+
+
+
+
+
     return (
         <section className='font-Comfortaa'>
             <Header />
@@ -50,11 +74,15 @@ export default function Contact() {
                 </div>
 
 
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' flex flex-col gap-10 basis-[100%] md:basis-[50%] md:mr-12 md:mb-16 py-16 px-10 my-10 mx-10  bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
-                    <input className='rounded-lg p-2' type="text" placeholder='Name' />
-                    <input className='rounded-lg p-2' type="email" name="" id="" placeholder='Email' />
-                    <textarea className='rounded-lg p-2 h-[160px]' type="text" placeholder='Message' />
-                    <Link href={"mailto:gauravtak996@gmail.com"}></Link> <button type='button' className='transition-all ease-in-out shadow-xl duration-300 p-2 bg-fuchsia-500 hover:bg-gradient-to-tr hover:from-pink-400 hover:to-red-400 hover:rounded-lg'>Send Message</button>
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='  basis-[100%] md:basis-[50%] md:mr-12 md:mb-16 py-16 px-10 my-10 mx-10  bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+
+                    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-10">
+                        <input className='rounded-lg p-2' type="text" name='user_name' placeholder='Name' />
+                        <input className='rounded-lg p-2' type="email" name="user_email" id="" placeholder='Email' />
+                        <textarea className='rounded-lg p-2 h-[160px]' type="text" name='user_message' placeholder='Message' />
+                        <input type='submit' className='transition-all ease-in-out shadow-xl duration-300 p-2 bg-fuchsia-500 hover:bg-gradient-to-tr hover:from-pink-400 hover:to-red-400 hover:rounded-lg'/>
+                    </form>
+
 
                 </motion.div>
             </div>
