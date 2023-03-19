@@ -6,9 +6,6 @@ import Link from "next/link";
 import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import { FaLinkedin, FaTwitter, FaTelegram } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa"
-import { FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 import mypic from "../public/pixelgoku.png"
 
@@ -57,7 +54,7 @@ export default function Contact() {
                     <input className='rounded-lg p-2' type="text" placeholder='Name' />
                     <input className='rounded-lg p-2' type="email" name="" id="" placeholder='Email' />
                     <textarea className='rounded-lg p-2 h-[160px]' type="text" placeholder='Message' />
-                    <button type='button' className='transition-all ease-in-out shadow-xl duration-300 p-2 bg-fuchsia-500 hover:bg-gradient-to-tr hover:from-pink-400 hover:to-red-400 hover:rounded-lg'>Send Message</button>
+                    <Link href={"mailto:gauravtak996@gmail.com"}></Link> <button type='button' className='transition-all ease-in-out shadow-xl duration-300 p-2 bg-fuchsia-500 hover:bg-gradient-to-tr hover:from-pink-400 hover:to-red-400 hover:rounded-lg'>Send Message</button>
 
                 </motion.div>
             </div>
