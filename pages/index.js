@@ -70,7 +70,7 @@ export default function Home() {
 
         {/*------------------------------------------ 1st Motion div --------------------------------------------------------- */}
         {/* <div className='transition-all duration-200 hover:scale-125'> */}
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[380px] max-w-[500px] hover:drop-shadow-xl card basis-[100%] lg:basis-[50%] md:basis-[37%] py-12 px-10 m-10 md:mx-1 md:mb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg '>
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[380px] max-w-[500px] hover:drop-shadow-xl card basis-[100%]  py-12 px-10 m-10 md:mx-1 md:mb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg '>
           <div className=" text-zinc-800 font-sans ">
             <img className='transition-all duration-200 hover:scale-150 shadow-2xl my-4 md:my-2 md:ml-4 mx-auto w-20 rounded-full' src="https://www.meme-arsenal.com/memes/5ee99d558641255d6e670bbd54953397.jpg" alt="flower" />
             <div className='md:flex ml-5 md:flex-col'>
@@ -107,7 +107,7 @@ export default function Home() {
 
         {/*---------------------------------------- 3rd Motion div  -------------------------------------------*/}
 
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' max-h-[380px] max-w-[300px] hover:drop-shadow-xl mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg '>
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' max-h-[380px] max-w-[300px] sm:max-w-[500px] hover:drop-shadow-xl mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg '>
           <div className="text-zinc-800">
             <div className='relative flex ml-40 md:ml-2 md:flex-col md:p-[1rem] sm:inline-block sm:mx-auto'>
               {/* ssm:mx-24 */}
@@ -127,13 +127,13 @@ export default function Home() {
 
       <section className='flex flex-col md:flex-row text-center justify-center md:text-left md:ml-[30px] '>
         {/*------------------------------ Things I know Section------------------------------------------------------  */}
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[450px] max-w-[650px]  hover:drop-shadow-xl  basis-[100%] md:basis-[50%] md:pt-40 py-12 px-6 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[450px] max-w-[640px] hover:drop-shadow-xl  basis-[100%] md:basis-[50%] md:pt-40 py-12 px-6 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           {/* ssm:pl-2 */}
           <div className=" text-zinc-800 font-sans">
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 text-lg font-Comfortaa'>Things I Know</h1>
             </div>
-            <div className='ml-4 md:ml-[2px] sm:ml-[0.1px] flex md:flex-row mx-auto gap-4 mmd:ml-[29rem]'>
+            <div className='ml-4 md:ml-[20px] sm:ml-[0.1px] flex md:flex-row sm:justify-center md:justify-start mx-auto gap-4 mmd:ml-[29rem]'>
               <Link href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}><FaJsSquare className='sm:w-[1.6rem]' size={40} /></Link>
               <Link href={'https://reactjs.org/'}><FaReact className='sm:w-[1.6rem]' size={40} /></Link>
               <Link href={'https://git-scm.com/'}><FaGit className='sm:w-[1.6rem]' size={40} /></Link>

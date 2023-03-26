@@ -48,7 +48,7 @@ export default function Projects() {
                     <p className='text-center'>
                         An interactive Rock Paper Scissors Game.
                     </p>
-                    <ul className='flex flex-row gap-5 justify-center text-sm font-bold mt-4'>
+                    <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px]  font-bold mt-4'>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JAVASCRIPT</li>
@@ -64,7 +64,7 @@ export default function Projects() {
                     <p className='text-center'>
                         A signup page with authentication and security. For data security bcrypt is used.
                     </p>
-                    <ul className='flex flex-row gap-5 justify-center text-sm font-bold mt-4'>
+                    <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px]  font-bold mt-4'>
                         <li>NodeJs</li>
                         <li>MongoDB</li>
                         <li>Mongoose</li>
@@ -83,7 +83,7 @@ export default function Projects() {
                     <p className='text-center'>
                         Your movies DB which fetches data from API using axios.
                     </p>
-                    <ul className='flex flex-row gap-5 justify-center text-sm font-bold mt-4'>
+                    <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px] font-bold mt-4'>
                         <li>ReactJs</li>
                         <li>Tailwind CSS</li>
                         
