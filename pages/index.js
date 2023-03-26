@@ -57,7 +57,7 @@ export default function Home() {
 
 
   return (
-    <div className='lg:ml-20 md:ml-2 relative'>
+    <div className=' relative'>
       <Header />
 
       <motion.div ref={ref} variants={boxVariant} initial="visible" animate={scroll} className='absolute right-[45%] top-[20%]'>
@@ -136,7 +136,7 @@ export default function Home() {
             <div className='ml-4 md:ml-[20px] sm:ml-[0.1px] flex md:flex-row sm:justify-center md:justify-start mx-auto gap-4 mmd:ml-[29rem]'>
               <Link href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}><FaJsSquare className='sm:w-[1.6rem]' size={40} /></Link>
               <Link href={'https://reactjs.org/'}><FaReact className='sm:w-[1.6rem]' size={40} /></Link>
-              <Link href={'https://git-scm.com/'}><FaGit className='sm:w-[1.6rem]' size={40} /></Link>
+              <Link href={'https://git-scm.com/'}><FaGit className='sm:w-[1.6rem]' size={40} /></Link>    
               <Link href={'https://www.python.org/'}><FaPython className='sm:w-[1.6rem]' size={40} /></Link>
               <Link href={'https://www.mongodb.com/'}><DiMongodb className='sm:w-[1.6rem]' size={40} /></Link>
               <Link href={'https://nodejs.org/en/'}><DiNodejsSmall className='sm:w-[1.6rem]' size={40} /></Link>

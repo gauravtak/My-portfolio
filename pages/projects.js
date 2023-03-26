@@ -37,9 +37,9 @@ export default function Projects() {
         <div>
 
             <Header />
-            <section className='flex flex-col md:flex-row gap-4 mx-10 mt-16 font-Nunito'>
+            <section className='flex flex-col md:flex-row justify-center gap-4 mx-10 mt-16 font-Nunito'>
                  {/******************* 1st Project *******************/}
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' px-10 pb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-w-[380px] px-10 pb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left mt-6'>
                         <Link href={"https://github.com/gaurav-2-0-0-2/rock-paper-scissors-in-javascript-"}><FiGithub size={20} /></Link>
                         <Link href={"https://rock-paper-scissors-in-javascript.vercel.app/"}><FiExternalLink size={20} /></Link>
@@ -55,7 +55,7 @@ export default function Projects() {
                     </ul>
                 </motion.div>
                   {/******************* 2nd Project **********************/}
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='basis-[40%] px-10 pb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-w-[380px] px-10 pb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left  mt-6'>
                         <Link href={"https://github.com/gaurav-2-0-0-2/LetsBeFrenz"}><FiGithub size={20} /></Link>
                         {/* <FiExternalLink size={30} /> */}
@@ -74,7 +74,7 @@ export default function Projects() {
 
                 </motion.div>
                    {/***************** 3rd Project ****************/}
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' px-10 pb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-w-[380px] px-10 pb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left  mt-6'>
                         <Link href={"https://github.com/gaurav-2-0-0-2/MoviesDB"}><FiGithub size={20} /></Link>
                         {/* <FiExternalLink size={30} /> */}

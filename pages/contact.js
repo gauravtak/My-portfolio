@@ -61,7 +61,7 @@ export default function Contact() {
     return (
         <section className='font-Comfortaa'>
             <Header />
-            <div className='flex md:flex-row flex-col '>
+            <div className='flex md:flex-row flex-col mt-12 '>
                 <div className='m-12 md:basis-[50%]'>
                     <div className='flex'>
                         <h1 className='my-6 text-3xl md:text-5xl text-white'>Get In Touch</h1>
