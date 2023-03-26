@@ -66,7 +66,7 @@ export default function Home() {
 
       </motion.div>
 
-      <div className='flex flex-col md:flex-row text-center mt-10 md:text-left min-h-[55vh] md:ml-[100px]  '>
+      <div className='flex flex-col md:flex-row text-center justify-center mt-10 md:text-left'>
 
         {/*------------------------------------------ 1st Motion div --------------------------------------------------------- */}
         {/* <div className='transition-all duration-200 hover:scale-125'> */}
@@ -125,7 +125,7 @@ export default function Home() {
       {/* -----------------------------------Next Section------------------------------------------ */}
 
 
-      <section className='flex flex-col md:flex-row text-center md:text-left min-h-[55vh] md:ml-[100px] '>
+      <section className='flex flex-col md:flex-row text-center justify-center md:text-left md:ml-[30px] '>
         {/*------------------------------ Things I know Section------------------------------------------------------  */}
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[450px] max-w-[650px]  hover:drop-shadow-xl  basis-[100%] md:basis-[50%] md:pt-40 py-12 px-6 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           {/* ssm:pl-2 */}
@@ -133,7 +133,7 @@ export default function Home() {
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 text-lg font-Comfortaa'>Things I Know</h1>
             </div>
-            <div className='ml-4 md:ml-[20px] sm:ml-[0.1px] flex md:flex-row mx-auto gap-4 mmd:ml-[29rem]'>
+            <div className='ml-4 md:ml-[2px] sm:ml-[0.1px] flex md:flex-row mx-auto gap-4 mmd:ml-[29rem]'>
               <Link href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}><FaJsSquare className='sm:w-[1.6rem]' size={40} /></Link>
               <Link href={'https://reactjs.org/'}><FaReact className='sm:w-[1.6rem]' size={40} /></Link>
               <Link href={'https://git-scm.com/'}><FaGit className='sm:w-[1.6rem]' size={40} /></Link>
@@ -153,11 +153,13 @@ export default function Home() {
           <div className=" text-zinc-800 font-sans sm:pb-6">
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 mr-7 text-2xl font-Comfortaa'>Hire Me</h1>
+
             </div>
             <div className='relative flex md:flex-row'>
               <h1 className='text-bolder md:text-5xl inline-block md:ml-4 mx-auto text-3xl font-Comfortaa'>Get In Touch</h1>
-              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] lg:left-[29rem]  top-[2rem] md:left-[18.7rem] md:top-[1rem] sm:w-[10rem] sm:left-[1.5rem] sm:top-[3rem] mmd:left-[30rem]' size={60} /></button></Link>
+              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] lg:left-[20rem]  top-[2rem] md:left-[19.8rem] md:top-[1rem] sm:w-[10rem] sm:left-[1.5rem] sm:top-[3rem] mmd:left-[30rem]' size={60} /></button></Link>
             </div>
+
             {/* ssm:left-[10.5rem] */}
 
           </div>
