@@ -28,16 +28,16 @@ export default function Social() {
     return (
         <motion.div ref={ref} variants={boxVariant} initial='hidden' animate={control} className='flex gap-7 justify-center overflow-x-auto'>
             <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
-                <a href=""><FaTwitter size={20} /></a>
+                <a href="https://twitter.com/ALLOY992"><FaTwitter size={20} /></a>
             </div>
             <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
-                <a href=""><FaGithub size={20} /></a>
+                <a href="https://github.com/gaurav-2-0-0-2"><FaGithub size={20} /></a>
             </div>
             <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
                 <a href=""><FaInstagram size={20} /></a>
             </div>
             <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
-                <a href=""><FaLinkedin size={20} /></a>
+                <a href="https://www.linkedin.com/in/gaurav-tak-a4190222a/"><FaLinkedin size={20} /></a>
             </div>
             <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 bg-gradient-to-tr from-blue-200 to-red-200  rounded-lg'>
                 <a href=""><FaTelegram size={20} /></a>
