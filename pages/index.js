@@ -72,7 +72,7 @@ export default function Home() {
         {/* <div className='transition-all duration-200 hover:scale-125'> */}
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[380px] max-w-[500px] hover:drop-shadow-xl card basis-[100%]  py-12 px-10 m-10 md:mx-1 md:mb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg '>
           <div className=" text-zinc-800 font-sans ">
-            <img className='transition-all duration-200 hover:scale-150 shadow-2xl my-4 md:my-2 md:ml-4 mx-auto w-20 rounded-full' src="https://www.meme-arsenal.com/memes/5ee99d558641255d6e670bbd54953397.jpg" alt="flower" />
+            <img className='transition-all duration-200 hover:scale-150 shadow-2xl my-4 md:my-2 md:ml-4 mx-auto w-20 rounded-full' src="/jojo.jpg" alt="flower" />
             <div className='md:flex ml-5 md:flex-col'>
               <h1 className='md:mt-5 text-3xl font-bold font-Comfortaa'>Hi, This is Gaurav</h1>
               <p className='md:pr-40 md:mb-4 mt-4 font-Comfortaa'>Web Developer</p>
@@ -192,31 +192,3 @@ export default function Home() {
   )
 }
 
-
-// random code ignore ----------------------- 
-
-
-{/* <div className="flex relative bg-neutral-800 rounded-xl"> */ }
-{/* Navbar division  */ }
-{/* <nav className='w-96 mt-10 mb-10 mr-20 flex justify-evenly absolute top-0 right-0 rounded-full'>
-          <ul className='flex flex-row '>
-            <li className='ml-3 p-2 text-white'><a href="#">Home</a></li>
-            <li className='ml-3 p-2 text-white'><a href="#">About</a></li>
-            <li className='ml-3 p-2 text-white'><a href="#">Contact</a></li>
-          </ul>
-        </nav> */}
-{/* Intro division  */ }
-// <div className=''>
-{/* <img className='' src="https://www.meme-arsenal.com/memes/5ee99d558641255d6e670bbd54953397.jpg" alt="flower" /> */ }
-// </div>
-
-// <div className=''>
-
-{/* <h1 className=''>Hi, I'm Gaurav Tak</h1> */ }
-{/* <p className='text-white'>A Frontend Web Developer</p>
-          <p className='text-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nulla repellendus totam eligendi temporibus culpa inventore sit eveniet quas cum nesciunt, dolorem itaque quos perferendis sapiente delectus minus ex nemo!</p> */}
-      //   </div>
-
-
-
-      // </div>
