@@ -15,7 +15,6 @@ import Header from './Header';
 import { Amatic_SC } from '@next/font/google';
 import { Rubik } from '@next/font/google';
 
-// https://rxresu.me/gauravtak996/gaurav-tak //Resume link
 
 const amatic = Amatic_SC({
   subsets: ['latin'],
@@ -47,9 +46,6 @@ export default function Home() {
       control.start("visible")
       scroll.start("hidden")
     }
-    // else {
-    //   control.start("hidden")
-    // }
 
   }, [control, inView]);
 
@@ -57,7 +53,7 @@ export default function Home() {
 
 
   return (
-    <div className=' relative'>
+    <div className='relative m-auto'>
       <Header />
 
       <motion.div ref={ref} variants={boxVariant} initial="visible" animate={scroll} className='absolute right-[45%] top-[20%]'>
@@ -80,7 +76,6 @@ export default function Home() {
 
           </div>
         </motion.div>
-        {/* </div> */}
 
 
         {/*---------------------------------------- 2nd Motion div ----------------------------------------------*/}
@@ -94,7 +89,6 @@ export default function Home() {
               </div>
 
 
-              {/* <button type='button' onClick={() => router.push('/resume')} className='transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl hover:bg-gradient-to-tr from-pink-400 to-red-400 md:m-0  md:mx-auto md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button> */}
               <Link href={"https://drive.google.com/file/d/17zZDkNlWQC8HImuKFmw6lllBw_AqaXIc/view?usp=sharing"}><button type='button' className='font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl hover:bg-gradient-to-tr from-pink-400 to-red-400 md:m-0  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
 
 
@@ -127,19 +121,19 @@ export default function Home() {
 
       <section className='flex flex-col md:flex-row text-center justify-center md:text-left md:ml-[30px] '>
         {/*------------------------------ Things I know Section------------------------------------------------------  */}
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[450px] max-w-[640px] hover:drop-shadow-xl  basis-[100%] md:basis-[50%] md:pt-40 py-12 px-6 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[450px] max-w-[500px] md:max-w-[640px] hover:drop-shadow-xl  basis-[100%] md:basis-[50%] md:pt-40 py-12 px-6 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           {/* ssm:pl-2 */}
           <div className=" text-zinc-800 font-sans">
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 text-lg font-Comfortaa'>Things I Know</h1>
             </div>
-            <div className='ml-4 md:ml-[20px] sm:ml-[0.1px] flex md:flex-row sm:justify-center md:justify-start mx-auto gap-4 mmd:ml-[29rem]'>
-              <Link href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}><FaJsSquare className='sm:w-[1.6rem]' size={40} /></Link>
-              <Link href={'https://reactjs.org/'}><FaReact className='sm:w-[1.6rem]' size={40} /></Link>
-              <Link href={'https://git-scm.com/'}><FaGit className='sm:w-[1.6rem]' size={40} /></Link>    
-              <Link href={'https://www.python.org/'}><FaPython className='sm:w-[1.6rem]' size={40} /></Link>
-              <Link href={'https://www.mongodb.com/'}><DiMongodb className='sm:w-[1.6rem]' size={40} /></Link>
-              <Link href={'https://nodejs.org/en/'}><DiNodejsSmall className='sm:w-[1.6rem]' size={40} /></Link>
+            <div className='ml-4 md:ml-[20px] sm:ml-[0.1px] flex md:flex-wrap sm:justify-center md:justify-start mx-auto gap-4'>
+              <Link href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}><FaJsSquare className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>
+              <Link href={'https://reactjs.org/'}><FaReact className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>
+              <Link href={'https://git-scm.com/'}><FaGit className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>    
+              <Link href={'https://www.python.org/'}><FaPython className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>
+              <Link href={'https://www.mongodb.com/'}><DiMongodb className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>
+              <Link href={'https://nodejs.org/en/'}><DiNodejsSmall className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>
 
 
             </div>
@@ -152,15 +146,14 @@ export default function Home() {
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[450px] max-w-[500px] hover:drop-shadow-xl basis-[100%] lg:basis-[37.3%] md:basis-[38%] md:pt-20 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-7 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
           <div className=" text-zinc-800 font-sans sm:pb-6">
             <div className='md:flex ml-5 md:flex-col mb-7'>
-              <h1 className='md:mt-5 mr-7 text-2xl font-Comfortaa'>Hire Me</h1>
+              <h1 className='md:mt-5 mr-7 text-lg font-Comfortaa'>Hire Me</h1>
 
             </div>
             <div className='relative flex md:flex-row'>
-              <h1 className='text-bolder md:text-5xl inline-block md:ml-4 mx-auto text-3xl font-Comfortaa'>Get In Touch</h1>
-              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin absolute left-[18rem] lg:left-[20rem]  top-[2rem] md:left-[19.8rem] md:top-[1rem] sm:w-[10rem] sm:left-[1.5rem] sm:top-[3rem] mmd:left-[30rem]' size={60} /></button></Link>
+              <h1 className='text-bolder md:text-5xl inline-block md:ml-4 mx-auto text-lg font-Comfortaa'>Get In Touch</h1>
+              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin w-[3rem] absolute top-[5rem] right-[1rem] md:left-[19.8rem] md:top-[1rem] sm:w-[10rem] sm:left-[1rem] sm:top-[3rem]' size={60} /></button></Link>
             </div>
 
-            {/* ssm:left-[10.5rem] */}
 
           </div>
         </motion.div>
@@ -172,22 +165,6 @@ export default function Home() {
       </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   )
 }
