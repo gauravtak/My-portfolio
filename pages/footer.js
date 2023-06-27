@@ -16,26 +16,8 @@ const boxVariant = {
   hidden: { opacity: 0, scale: 0 }
 }
 
-
-
-
-
-
-
 export default function Contact() {
 
-  // const control = useAnimation()
-
-  // const [ref, inView] = useInView()
-
-  // useEffect(() => {
-  //   if (inView) {
-  //     control.start("visible");
-  //   }
-  //   else {
-  //     control.start("hidden");
-  //   }
-  // }, [control, inView])
 
   const year = new Date().getFullYear();
 
@@ -49,8 +31,7 @@ export default function Contact() {
       </div>
 
 
-      <Social />
-      {/* bg-gradient-to-tr from-red-500 via-pink-200 to-red-600 */}
+      <Social/>
 
       <section className='md:flex my-4 text-center md:justify-center md:gap-4 font-Comfortaa'>
         <h2 className=' text-gray-400 mt-16 mb-6 md:my-0'>© {year}</h2>
