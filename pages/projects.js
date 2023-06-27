@@ -25,9 +25,6 @@ export default function Projects() {
         if (inView) {
             control.start("visible")
         }
-        // else {
-        //   control.start("hidden")
-        // }
 
     }, [control, inView]);
 
@@ -41,47 +38,43 @@ export default function Projects() {
                  {/******************* 1st Project *******************/}
                 <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-w-[380px] px-10 pb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left mt-6'>
-                        <Link href={"https://github.com/gaurav-2-0-0-2/rock-paper-scissors-in-javascript-"}><FiGithub size={20} /></Link>
-                        <Link href={"https://rock-paper-scissors-in-javascript.vercel.app/"}><FiExternalLink size={20} /></Link>
+                        <Link href={"https://github.com/gaurav-2-0-0-2/Weather-App"}><FiGithub size={20} /></Link>
+                        <Link href={"https://weather-app-eight-plum.vercel.app/"}><FiExternalLink size={20} /></Link>
                     </div>
-                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa '>Rock Paper Scissors</h1>
+                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Weather App</h1>
                     <p className='text-center'>
-                        An interactive Rock Paper Scissors Game.
+                        Ask it the city and it tells you the weather.
                     </p>
-                    <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px]  font-bold mt-4'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
+                    <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px] font-bold mt-4'>
+                        <li>Nextjs</li>
+                        <li>Tailwind CSS</li>
                     </ul>
                 </motion.div>
                   {/******************* 2nd Project **********************/}
                 <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-w-[380px] px-10 pb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left  mt-6'>
-                        <Link href={"https://github.com/gaurav-2-0-0-2/LetsBeFrenz"}><FiGithub size={20} /></Link>
-                        {/* <FiExternalLink size={30} /> */}
+                        <Link href={"https://github.com/gaurav-2-0-0-2/Klove"}><FiGithub size={20} /></Link>
                     </div>
-                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>LetsBeFrenz</h1>
+                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Klove</h1>
                     <p className='text-center'>
-                        A signup page with authentication and security. For data security bcrypt is used.
+                        A Social Media Application for the people who loves cooking and like shaing their food-code.
                     </p>
                     <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px]  font-bold mt-4'>
-                        <li>NodeJs</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>Bcrypt</li>
-                        <li>EJS</li>
+                        <li>Nextjs (App router)</li>
+                        <li>Firebase</li>
+                        <li>Tailwind CSS</li>
                     </ul>
 
                 </motion.div>
                    {/***************** 3rd Project ****************/}
                 <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-w-[380px] px-10 pb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left  mt-6'>
-                        <Link href={"https://github.com/gaurav-2-0-0-2/MoviesDB"}><FiGithub size={20} /></Link>
-                        {/* <FiExternalLink size={30} /> */}
+                        <Link href={"https://github.com/gaurav-2-0-0-2/MoviesDB"}><FiGithub size={20}/></Link>
+                        <Link href={"https://movies-db-llon.vercel.app/"}><FiExternalLink size={20}/></Link>
                     </div>
                     <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Movies DB</h1>
                     <p className='text-center'>
-                        Your movies DB which fetches data from API using axios.
+                        Your movies DB which fetches data from API. Its a PWA.
                     </p>
                     <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px] font-bold mt-4'>
                         <li>ReactJs</li>
@@ -90,6 +83,9 @@ export default function Projects() {
                     </ul>
 
                 </motion.div>
+
+
+                
             </section>
 
             <Footer />
