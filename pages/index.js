@@ -89,7 +89,7 @@ export default function Home() {
               </div>
 
 
-              <Link href={"https://drive.google.com/file/d/17zZDkNlWQC8HImuKFmw6lllBw_AqaXIc/view?usp=sharing"}><button type='button' className='font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl hover:bg-gradient-to-tr from-pink-400 to-red-400 md:m-0  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
+              <Link href={"https://drive.google.com/file/d/1Mex41DlJHv052bDU-9Wf8t4rYSX_jrlG/view"}><button type='button' className='font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl hover:bg-gradient-to-tr from-pink-400 to-red-400 md:m-0  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
 
 
             </div>
