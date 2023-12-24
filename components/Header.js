@@ -1,5 +1,3 @@
-import styles from '@/styles/Home.module.css'
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 
