@@ -1,17 +1,17 @@
 import Projects from '../pages/projects.js';
 import styles from '../styles/Home.module.css';
-import Footer from "../pages/footer.js";
+import Footer from "../components/Footer.js";
 import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { FaTwitter, FaGit, FaJsSquare, FaReact, FaPython } from "react-icons/fa";
+import { FaTwitter, FaGit, FaJsSquare, FaReact, FaPython, FaGithub } from "react-icons/fa";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { DiMongodb, DiNodejsSmall, DiStackoverflow } from "react-icons/di";
 import { HiArrowCircleRight } from "react-icons/hi";
 import { HiArrowCircleDown } from "react-icons/hi";
-import Header from './Header';
+import Header from '../components/Header.js';
 import { Amatic_SC } from '@next/font/google';
 import { Rubik } from '@next/font/google';
 
@@ -66,11 +66,11 @@ export default function Home() {
 
         {/*------------------------------------------ 1st Motion div --------------------------------------------------------- */}
         {/* <div className='transition-all duration-200 hover:scale-125'> */}
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[380px] max-w-[500px] hover:drop-shadow-xl card basis-[100%]  py-12 px-10 m-10 md:mx-1 md:mb-10 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg '>
-          <div className=" text-zinc-800 font-sans ">
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' css-card-tile-cyan max-h-[380px] max-w-[500px] hover:drop-shadow-xl card basis-[100%]  py-12 px-10 m-10 md:mx-1 md:mb-10 rounded-lg '>
+          <div className=" text-[#d1d0d0] font-sans ">
             <img className='transition-all duration-200 hover:scale-150 shadow-2xl my-4 md:my-2 md:ml-4 mx-auto w-20 rounded-full' src="/jojo.jpg" alt="flower" />
             <div className='md:flex ml-5 md:flex-col'>
-              <h1 className='md:mt-5 text-3xl font-bold font-Comfortaa'>Hi, This is Gaurav</h1>
+              <h1 className='md:mt-5 text-3xl font-bold font-Comfortaa'>Hi, This is <span className='font-Comfortaa bg-gradient-to-br from-purple-500 to-cyan-400 text-transparent bg-clip-text inline-block font-bold'>Gaurav</span></h1>
               <p className='md:pr-40 md:mb-4 mt-4 font-Comfortaa'>Web Developer</p>
             </div>
 
@@ -80,8 +80,8 @@ export default function Home() {
 
         {/*---------------------------------------- 2nd Motion div ----------------------------------------------*/}
 
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[380px] max-w-[500px]  hover:drop-shadow-xl  mx-10 py-12 md:py-10 md:px-12 md:my-10 md:mx-5 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
-          <div className=" text-zinc-800 font-sans inline-block md:mt-10">
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-violet max-h-[380px] max-w-[500px]  hover:drop-shadow-xl  mx-10 py-12 md:py-10 md:px-12 md:my-10 md:mx-5 rounded-lg'>
+          <div className=" text-[#d1d0d0] font-sans inline-block md:mt-10">
             <div className='md:flex ml-2 md:flex-col '>
               <div className=' transition-all duration-200 hover:scale-110'>
                 <HiOutlineClipboardDocumentList className='mx-auto' size={80} />
@@ -89,7 +89,7 @@ export default function Home() {
               </div>
 
 
-              <Link href={"https://drive.google.com/file/d/1Mex41DlJHv052bDU-9Wf8t4rYSX_jrlG/view"}><button type='button' className='font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl hover:bg-gradient-to-tr from-pink-400 to-red-400 md:m-0  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
+              <Link href={"https://drive.google.com/file/d/1zG3O5u6xu7x17ihmwfSRRrD887MEpv-J/view?usp=sharing"}><button type='button' className='css-btn font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
 
 
             </div>
@@ -101,12 +101,14 @@ export default function Home() {
 
         {/*---------------------------------------- 3rd Motion div  -------------------------------------------*/}
 
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' max-h-[380px] max-w-[300px] sm:max-w-[500px] hover:drop-shadow-xl mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg '>
-          <div className="text-zinc-800">
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-blue max-h-[380px] max-w-[300px] sm:max-w-[500px] hover:drop-shadow-xl mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 rounded-lg '>
+          <div className="text-[#d1d0d0]">
             <div className='relative flex ml-40 md:ml-2 md:flex-col md:p-[1rem] sm:inline-block sm:mx-auto'>
               {/* ssm:mx-24 */}
-              <Link href={'https://twitter.com/ALLOY992'}><FaTwitter className=' md:mt-6 transition-all duration-200 hover:scale-110 sm:w-[5.5rem]' size={100} /></Link>
-              <Link href={'https://twitter.com/ALLOY992'}><button type='button'><HiArrowCircleRight className='hover:animate-spin absolute right-4 top-[5rem]  md:left-[7rem] md:top-[10rem] sm:right-[0.5rem] sm:mt-4' size={60} /></button></Link>
+              {/* <Link href={'https://twitter.com/ALLOY992'}><FaTwitter className=' md:mt-6 transition-all duration-200 hover:scale-110 sm:w-[5.5rem]' size={100} /></Link> */}
+              <Link href="https://github.com/gaurav-2-0-0-2"><FaGithub className=' md:mt-6 transition-all duration-200 hover:scale-110 sm:w-[5.5rem]' size={100} /></Link>
+              <Link href={'https://github.com/gaurav-2-0-0-2'}><button type='button'>
+	  </button></Link>
             </div>
 
           </div>
@@ -121,9 +123,9 @@ export default function Home() {
 
       <section className='flex flex-col md:flex-row text-center justify-center md:text-left md:ml-[30px] '>
         {/*------------------------------ Things I know Section------------------------------------------------------  */}
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[450px] max-w-[500px] md:max-w-[640px] hover:drop-shadow-xl  basis-[100%] md:basis-[50%] md:pt-40 py-12 px-6 mx-10 md:mb-10 md:mx-1 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-blue max-h-[450px] max-w-[500px] md:max-w-[640px] hover:drop-shadow-xl  basis-[100%] md:basis-[50%] md:pt-40 py-12 px-6 mx-10 md:mb-10 md:mx-1  rounded-lg'>
           {/* ssm:pl-2 */}
-          <div className=" text-zinc-800 font-sans">
+          <div className=" text-[#d1d0d0] font-sans">
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 text-lg font-Comfortaa'>Things I Know</h1>
             </div>
@@ -143,15 +145,17 @@ export default function Home() {
 
         {/*----------------------------------------------- Hire Me section ------------------------------------------------------- */}
 
-        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='max-h-[450px] max-w-[500px] hover:drop-shadow-xl basis-[100%] lg:basis-[37.3%] md:basis-[38%] md:pt-20 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-7 bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
-          <div className=" text-zinc-800 font-sans sm:pb-6">
+        <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-cyan max-h-[450px] max-w-[500px] hover:drop-shadow-xl basis-[100%] lg:basis-[37.3%] md:basis-[38%] md:pt-20 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-7 rounded-lg'>
+          <div className=" text-[#d1d0d0] font-sans sm:pb-6">
             <div className='md:flex ml-5 md:flex-col mb-7'>
               <h1 className='md:mt-5 mr-7 text-lg font-Comfortaa'>Hire Me</h1>
 
             </div>
             <div className='relative flex md:flex-row'>
               <h1 className='text-bolder md:text-5xl inline-block md:ml-4 mx-auto text-lg font-Comfortaa'>Get In Touch</h1>
-              <Link href={"/contact"}><button type='button'><HiArrowCircleRight className=' hover:animate-spin w-[3rem] absolute top-[5rem] right-[1rem] md:left-[19.8rem] md:top-[1rem] sm:w-[10rem] sm:left-[1rem] sm:top-[3rem]' size={60} /></button></Link>
+              <Link href={"/contact"}><button type='button'>
+
+	  </button></Link>
             </div>
 
 

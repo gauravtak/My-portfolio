@@ -1,7 +1,7 @@
 import styles from '@/styles/Home.module.css';
 import Projects from '../pages/projects.js';
-import Footer from "../pages/footer.js";
-import Header from "./Header";
+import Footer from "../components/Footer.js";
+import Header from "../components/Header.js";
 import Link from "next/link";
 import { useEffect, useRef } from 'react';
 import { useInView } from "react-intersection-observer";
@@ -74,13 +74,13 @@ export default function Contact() {
                 </div>
 
 
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='  basis-[100%] md:basis-[50%] md:mr-12 md:mb-16 py-16 px-10 my-10 mx-10  bg-gradient-to-tr from-pink-200 via-violet-300 to-red-300 rounded-lg'>
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-cyan basis-[100%] md:basis-[50%] md:mr-12 md:mb-16 py-16 px-10 my-10 mx-10 rounded-lg'>
 
                     <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-10">
-                        <input className='rounded-lg p-2' type="text" name='user_name' placeholder='Name' />
-                        <input className='rounded-lg p-2' type="email" name="user_email" id="" placeholder='Email' />
-                        <textarea className='rounded-lg p-2 h-[160px]' type="text" name='user_message' placeholder='Message' />
-                        <input type='submit' className='transition-all ease-in-out shadow-xl duration-300 p-2 bg-fuchsia-500 hover:bg-gradient-to-tr hover:from-pink-400 hover:to-red-400 hover:rounded-lg'/>
+                        <input className='rounded-lg p-2 bg-slate-300 outline-none' type="text" name='user_name' placeholder='Name' />
+                        <input className='rounded-lg p-2 bg-slate-300 outline-none' type="email" name="user_email" id="" placeholder='Email' />
+                        <textarea className='rounded-lg p-2 h-[160px] bg-slate-300 outline-none' type="text" name='user_message' placeholder='Message' />
+                        <input type='submit' className='css-btn transition-all ease-in-out shadow-xl duration-300 p-2  hover:rounded-lg'/>
                     </form>
 
 

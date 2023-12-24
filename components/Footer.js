@@ -26,7 +26,7 @@ export default function Contact() {
   return (
     <div className='  text-center mt-20'>
       <div className='portfolio md:mx-80'>
-        <h1 className='mt-12 font-Comfortaa bg-gradient-to-r from-red-400 via-fuchsia-300 to bg-cyan-600 text-transparent bg-clip-text inline-block font-bold text-[25px] md:text-[30px] mb-12'>Portfolio</h1>
+        <h1 className='mt-12 font-Comfortaa bg-gradient-to-br from-cyan-600 to-red-600 text-transparent bg-clip-text inline-block font-bold text-[25px] md:text-[30px] mb-12'>Portfolio</h1>
 
       </div>
 
