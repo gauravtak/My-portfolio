@@ -1,5 +1,4 @@
-import styles from '@/styles/Home.module.css'
-// import React from 'react';
+"use client";
 import { FaLinkedin, FaTwitter, FaTelegram } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"

@@ -1,20 +1,8 @@
-import styles from '@/styles/Home.module.css'
-// import React from 'react';
-import { FaLinkedin, FaTwitter, FaTelegram } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa"
-import { FaInstagram } from "react-icons/fa"
-import { useEffect } from 'react';
 import Link from "next/link";
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
 import Social from './Social';
 // import { useLayoutEffect } from 'react';
 
 
-const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, scale: 0 }
-}
 
 export default function Contact() {
 

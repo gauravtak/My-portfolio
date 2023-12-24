@@ -1,6 +1,5 @@
-import Projects from '../pages/projects.js';
-import styles from '../styles/Home.module.css';
-import Footer from "../components/Footer.js";
+"use client";
+import Footer from "@/components/Footer.js";
 import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -9,11 +8,10 @@ import Link from "next/link";
 import { FaTwitter, FaGit, FaJsSquare, FaReact, FaPython, FaGithub } from "react-icons/fa";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { DiMongodb, DiNodejsSmall, DiStackoverflow } from "react-icons/di";
-import { HiArrowCircleRight } from "react-icons/hi";
 import { HiArrowCircleDown } from "react-icons/hi";
-import Header from '../components/Header.js';
-import { Amatic_SC } from '@next/font/google';
-import { Rubik } from '@next/font/google';
+import Header from '@/components/Header.js';
+import { Amatic_SC } from 'next/font/google';
+import { Rubik } from 'next/font/google';
 
 
 const amatic = Amatic_SC({
