@@ -87,7 +87,7 @@ export default function Home() {
               </div>
 
 
-              <Link href={"https://drive.google.com/file/d/1zG3O5u6xu7x17ihmwfSRRrD887MEpv-J/view?usp=sharing"}><button type='button' className='css-btn font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
+              <Link href={"https://drive.google.com/file/d/15vFUux0GvWtAsDTSerdk5Eb4l7diGCOF/view?usp=sharing"}><button type='button' className='css-btn font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
 
 
             </div>
