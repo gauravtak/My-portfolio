@@ -16,7 +16,7 @@ const boxVariant = {
 }
 
 
-export default function Projects() {
+export default function Career() {
     const control = useAnimation();
 
     const [ref, inView] = useInView();
@@ -35,28 +35,34 @@ export default function Projects() {
 
             <Header />
             <section className='flex flex-col md:flex-row justify-center gap-4 mx-10 mt-16 font-Nunito text-[#d1d0d0]'>
-                 {/******************* 1st Project *******************/}
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-cyan max-w-[380px] px-6  pb-10 rounded-lg'>
-                    <div className='flex flex-row gap-4 justify-left mt-6'>
-                        <Link href={"https://github.com/gaurav-2-0-0-2/DuckMart"}><FiGithub size={20} /></Link>
+                 {/******************* 1st Company*******************/}
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-cyan max-w-[380px] px-6 pb-10 rounded-lg'>
+                    
+                    <Link className='hover:underline' href={'https://truss.biz'}><h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Truss Studios</h1></Link>
+                    <div className='text-left mt-2'>
+	  	    <ol className='flex flex-col gap-2'>
+	    		<li>
+	    		  Currently Working as a <span className="font-bold">Full Stack Developer</span>
+  			</li>
+	    		<li>         
+	    		 Improving current state of Supply Chains
+  			</li>
+	    		<li>         
+	    		 Leveraging <span  className="font-bold">Blockchain and AI</span>
+  			</li>
+	    	    </ol>
+	    		
                     </div>
-                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Duck Mart</h1>
-                    <p className='text-left'>
-	    		• API endpoint for segmentaion usecases<br/>
-                        • Data loaded into Duckdb<br/>
-                        • Consumer can convert the JSON into SQL<br/>
-                    </p>
                     <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px] font-bold mt-4'>
-                        <li>Python</li>
-                        <li>Duck DB</li>
+                        <li>Nextjs</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
                     </ul>
                 </motion.div>
-                  {/******************* 2nd Project **********************/}
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-violet max-w-[380px] px-10 pb-10 rounded-lg'>
-                    <div className='flex flex-row gap-4 justify-left  mt-6'>
-                        <Link href={"https://github.com/gaurav-2-0-0-2/Klove"}><FiGithub size={20} /></Link>
-                    </div>
-                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Klove</h1>
+                  {/******************* XXXXXX **********************/}
+
+	    {/*<motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-violet max-w-[380px] px-10 pb-10 rounded-lg'>
+                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Bit To Byte Robotics</h1>
                     <p className='text-center'>
                         A Social Media Application for the people who loves cooking and like shaing their food-code.
                     </p>
@@ -66,8 +72,9 @@ export default function Projects() {
                         <li>Tailwind CSS</li>
                     </ul>
 
-                </motion.div>
-                   {/***************** 3rd Project ****************/}
+                </motion.div>*/}
+                   {/***************** X XXXX****************/}
+	    {/*
                 <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-blue max-w-[380px] px-10 pb-10 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left  mt-6'>
                         <Link href={"https://github.com/gaurav-2-0-0-2/MoviesDB"}><FiGithub size={20}/></Link>
@@ -84,7 +91,7 @@ export default function Projects() {
                     </ul>
 
                 </motion.div>
-
+*/}
 
                 
             </section>
@@ -94,3 +101,4 @@ export default function Projects() {
         </div>
     )
 } 
+
