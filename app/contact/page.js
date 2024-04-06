@@ -1,6 +1,4 @@
 "use client";
-import Footer from "@/components/Footer.js";
-import Header from "@/components/Header.js";
 import Link from "next/link";
 import { useEffect, useRef } from 'react';
 import { useInView } from "react-intersection-observer";
@@ -59,7 +57,6 @@ export default function Contact() {
 
     return (
         <section className='font-Comfortaa'>
-            <Header />
             <div className='flex md:flex-row flex-col mt-12 '>
                 <div className='m-12 md:basis-[50%]'>
                     <div className='flex'>
@@ -85,7 +82,6 @@ export default function Contact() {
 
                 </motion.div>
             </div>
-            <Footer />
 
         </section>
 

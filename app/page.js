@@ -1,5 +1,4 @@
 "use client";
-import Footer from "@/components/Footer.js";
 import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -9,7 +8,6 @@ import { FaTwitter, FaGit, FaJsSquare, FaReact, FaPython, FaGithub } from "react
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { DiMongodb, DiNodejsSmall, DiStackoverflow } from "react-icons/di";
 import { HiArrowCircleDown } from "react-icons/hi";
-import Header from '@/components/Header.js';
 import { Amatic_SC } from 'next/font/google';
 import { Rubik } from 'next/font/google';
 
@@ -52,7 +50,6 @@ export default function Home() {
 
   return (
     <div className='relative m-auto'>
-      <Header />
 
       <motion.div ref={ref} variants={boxVariant} initial="visible" animate={scroll} className='absolute right-[45%] top-[20%]'>
         <h1 className=' bg-gradient-to-r from-red-400 via-fuchsia-300 to bg-cyan-600 text-transparent bg-clip-text mb-10  font-bold text-5xl '>Scroll</h1>
@@ -87,7 +84,7 @@ export default function Home() {
               </div>
 
 
-              <Link href={"https://drive.google.com/file/d/15vFUux0GvWtAsDTSerdk5Eb4l7diGCOF/view?usp=sharing"}><button type='button' className='css-btn font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
+              <Link href={"https://drive.google.com/file/d/1vRADItkS7lOe3UCSUhg4igKEzr9CMUEC/view?usp=sharing"}><button type='button' className='css-btn font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
 
 
             </div>
@@ -163,7 +160,6 @@ export default function Home() {
 
 
       <div>
-        <Footer />
       </div>
 
     </div>

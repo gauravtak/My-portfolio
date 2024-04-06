@@ -1,6 +1,4 @@
 "use client";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -33,7 +31,6 @@ export default function Career() {
     return (
         <div>
 
-            <Header />
             <section className='flex flex-col md:flex-row justify-center gap-4 mx-10 mt-16 font-Nunito text-[#d1d0d0]'>
                  {/******************* 1st Company*******************/}
                 <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-cyan max-w-[380px] px-6 pb-10 rounded-lg'>
@@ -54,6 +51,7 @@ export default function Career() {
 	    		
                     </div>
                     <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px] font-bold mt-4'>
+                        <li>Typescript</li>
                         <li>Nextjs</li>
                         <li>Node.js</li>
                         <li>MongoDB</li>
@@ -96,7 +94,6 @@ export default function Career() {
                 
             </section>
 
-            <Footer />
 
         </div>
     )

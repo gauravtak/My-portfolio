@@ -1,6 +1,4 @@
 "use client";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { useEffect } from 'react';
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
@@ -33,7 +31,6 @@ export default function Projects() {
     return (
         <div>
 
-            <Header />
             <section className='flex flex-col md:flex-row justify-center gap-4 mx-10 mt-16 font-Nunito text-[#d1d0d0]'>
                  {/******************* 1st Project *******************/}
                 <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-cyan max-w-[380px] px-6  pb-10 rounded-lg'>
@@ -52,44 +49,24 @@ export default function Projects() {
                     </ul>
                 </motion.div>
                   {/******************* 2nd Project **********************/}
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-violet max-w-[380px] px-10 pb-10 rounded-lg'>
+                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-blue max-w-[380px] px-10 pb-10 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left  mt-6'>
-                        <Link href={"https://github.com/gaurav-2-0-0-2/Klove"}><FiGithub size={20} /></Link>
+                        <Link href={"https://github.com/gaurav-2-0-0-2/suvidha-client"}><FiGithub size={20} /></Link>
                     </div>
-                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Klove</h1>
+                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Suvidha</h1>
                     <p className='text-center'>
-                        A Social Media Application for the people who loves cooking and like shaing their food-code.
+                        Suvidha aims to solve the issue exists in traditional way of distribution of ration by digitizing it and giving the control to the customer
                     </p>
                     <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px]  font-bold mt-4'>
                         <li>Nextjs (App router)</li>
-                        <li>Firebase</li>
+                        <li>Typescript</li>
                         <li>Tailwind CSS</li>
+                        <li>Postgresql</li>
                     </ul>
 
                 </motion.div>
-                   {/***************** 3rd Project ****************/}
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-blue max-w-[380px] px-10 pb-10 rounded-lg'>
-                    <div className='flex flex-row gap-4 justify-left  mt-6'>
-                        <Link href={"https://github.com/gaurav-2-0-0-2/MoviesDB"}><FiGithub size={20}/></Link>
-                        <Link href={"https://movies-db-llon.vercel.app/"}><FiExternalLink size={20}/></Link>
-                    </div>
-                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Movies DB</h1>
-                    <p className='text-center'>
-                        Your movies DB which fetches data from API. Its a PWA.
-                    </p>
-                    <ul className='flex flex-row gap-3 justify-center text-[15px] sm:text-[10px] font-bold mt-4'>
-                        <li>ReactJs</li>
-                        <li>Tailwind CSS</li>
-                        
-                    </ul>
-
-                </motion.div>
-
-
-                
             </section>
 
-            <Footer />
 
         </div>
     )
