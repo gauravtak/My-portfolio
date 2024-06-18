@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FaTwitter, FaGit, FaJsSquare, FaReact, FaPython, FaGithub } from "react-icons/fa";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { DiMongodb, DiNodejsSmall, DiStackoverflow } from "react-icons/di";
+import { SiTypescript, SiPostgresql} from "react-icons/si";
 import { HiArrowCircleDown } from "react-icons/hi";
 import { Amatic_SC } from 'next/font/google';
 import { Rubik } from 'next/font/google';
@@ -66,7 +67,7 @@ export default function Home() {
             <img className='transition-all duration-200 hover:scale-150 shadow-2xl my-4 md:my-2 md:ml-4 mx-auto w-20 rounded-full' src="/jojo.jpg" alt="flower" />
             <div className='md:flex ml-5 md:flex-col'>
               <h1 className='md:mt-5 text-3xl font-bold font-Comfortaa'>Hi, This is <span className='font-Comfortaa bg-gradient-to-br from-purple-500 to-cyan-400 text-transparent bg-clip-text inline-block font-bold'>Gaurav</span></h1>
-              <p className='md:pr-40 md:mb-4 mt-4 font-Comfortaa'>Web Developer</p>
+              <p className='md:pr-40 md:mb-4 mt-4 font-Comfortaa'>Full Stack Developer</p>
             </div>
 
           </div>
@@ -84,7 +85,7 @@ export default function Home() {
               </div>
 
 
-              <Link href={"https://drive.google.com/file/d/1vRADItkS7lOe3UCSUhg4igKEzr9CMUEC/view?usp=sharing"}><button type='button' className='css-btn font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
+              <Link href={"https://drive.google.com/file/d/1dCbTP8Yfbu2XyuiIobIUFpO1fIgTbJTs/view"}><button type='button' className='css-btn font-Comfortaa transition-all ease-in-out shadow-xl rounded-xl duration-300 hover:rounded-3xl  md:mx-14 md:w-[120px] bg-gray-800 text-lg text-gray-200 px-4 py-2'>Resume</button></Link>
 
 
             </div>
@@ -131,8 +132,8 @@ export default function Home() {
               <Link href={'https://www.python.org/'}><FaPython className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>
               <Link href={'https://www.mongodb.com/'}><DiMongodb className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>
               <Link href={'https://nodejs.org/en/'}><DiNodejsSmall className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>
-
-
+              <Link href={'https://www.typescriptlang.org/'}><SiTypescript className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>
+              <Link href={'https://www.postgresql.org/'}><SiPostgresql className='w-[1rem] sm:w-[1.6rem]' size={40} /></Link>
             </div>
 
           </div>
