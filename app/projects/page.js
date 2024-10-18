@@ -5,9 +5,6 @@ import { motion, useAnimation } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
 
-
-
-
 const boxVariant = {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hidden: { opacity: 0, scale: 0 }

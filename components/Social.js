@@ -26,20 +26,20 @@ export default function Social() {
     }, [control, inView])
     return (
         <motion.div ref={ref} variants={boxVariant} initial='hidden' animate={control} className='flex gap-7 justify-center overflow-x-auto text-[#d1d0d0]'>
-            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 css-card-tile-blue  rounded-lg'>
-                <a href="https://twitter.com/ALLOY992"><FaTwitter size={40} /></a>
+            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-2 css-card-tile-blue  rounded-lg'>
+                <a href="https://twitter.com/ALLOY992"><FaTwitter size={20} /></a>
             </div>
-            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 css-card-tile-blue  rounded-lg'>
-                <a href="https://github.com/gaurav-2-0-0-2"><FaGithub size={40} /></a>
+            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-2 css-card-tile-blue  rounded-lg'>
+                <a href="https://github.com/gaurav-2-0-0-2"><FaGithub size={20} /></a>
             </div>
-            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 css-card-tile-blue  rounded-lg'>
-                <a href=""><FaInstagram size={40} /></a>
+            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-2 css-card-tile-blue  rounded-lg'>
+                <a href=""><FaInstagram size={20} /></a>
             </div>
-            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 css-card-tile-blue  rounded-lg'>
-                <a href="https://www.linkedin.com/in/gaurav-tak-a4190222a/"><FaLinkedin size={40} /></a>
+            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-2 css-card-tile-blue  rounded-lg'>
+                <a href="https://www.linkedin.com/in/gaurav-tak-a4190222a/"><FaLinkedin size={20} /></a>
             </div>
-            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-10 css-card-tile-blue  rounded-lg'>
-                <a href=""><FaTelegram size={40} /></a>
+            <div className='sm:py-1 sm:px-1 px-1 py-1 md:py-4 md:px-4 md:gap-10  md:m-2 css-card-tile-blue  rounded-lg'>
+                <a href=""><FaTelegram size={20} /></a>
             </div>
         </motion.div>
     )

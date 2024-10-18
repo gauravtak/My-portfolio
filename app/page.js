@@ -12,7 +12,6 @@ import { HiArrowCircleDown } from "react-icons/hi";
 import { Amatic_SC } from 'next/font/google';
 import { Rubik } from 'next/font/google';
 
-
 const amatic = Amatic_SC({
   subsets: ['latin'],
   weight: ['400', '700']
@@ -46,20 +45,14 @@ export default function Home() {
 
   }, [control, inView]);
 
-
-
-
   return (
     <div className='relative m-auto'>
-
       <motion.div ref={ref} variants={boxVariant} initial="visible" animate={scroll} className='absolute right-[45%] top-[20%]'>
         <h1 className=' bg-gradient-to-r from-red-400 via-fuchsia-300 to bg-cyan-600 text-transparent bg-clip-text mb-10  font-bold text-5xl '>Scroll</h1>
         <HiArrowCircleDown className='ml-7 animate-bounce text-white' size={60} />
-
       </motion.div>
 
-      <div className='flex flex-col md:flex-row text-center justify-center mt-10 md:text-left'>
-
+      <div className='flex flex-col md:flex-row text-center justify-center  md:text-left'>
         {/*------------------------------------------ 1st Motion div --------------------------------------------------------- */}
         {/* <div className='transition-all duration-200 hover:scale-125'> */}
         <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className=' css-card-tile-cyan max-h-[380px] max-w-[500px] hover:drop-shadow-xl card basis-[100%]  py-12 px-10 m-10 md:mx-1 md:mb-10 rounded-lg '>
