@@ -31,7 +31,7 @@ export default function Career() {
     return (
         <div>
 
-            <section className='flex flex-col md:flex-row justify-center gap-4 mx-10 mt-16 font-Nunito text-[#d1d0d0]'>
+            <section className='flex flex-col md:flex-row justify-center gap-4 mx-10 mt-16 font-JetBrainsMono text-[#d1d0d0]'>
                  {/******************* 1st Company*******************/}
                 <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-cyan max-w-[380px] px-6 pb-10 rounded-lg'>
                     

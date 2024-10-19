@@ -10,31 +10,25 @@ const boxVariant = {
     hidden: { opacity: 0, scale: 0 }
 }
 
-
 export default function Projects() {
     const control = useAnimation();
-
     const [ref, inView] = useInView();
 
     useEffect(() => {
         if (inView) {
             control.start("visible")
         }
-
     }, [control, inView]);
 
-
-
     return (
-        <div>
-
-            <section className='flex flex-col md:flex-row justify-center gap-4 mx-10 mt-16 font-Nunito text-[#d1d0d0]'>
+        <div className="font-JetBrainsMono">
+            <section className='flex flex-col md:flex-row justify-center gap-4 mx-10 mt-16  text-[#d1d0d0]'>
                  {/******************* 1st Project *******************/}
                 <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-cyan max-w-[380px] px-6  pb-10 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left mt-6'>
                         <Link href={"https://github.com/gaurav-2-0-0-2/DuckMart"}><FiGithub size={20} /></Link>
                     </div>
-                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Duck Mart</h1>
+                    <h1 className='text-center text-2xl font-bold mt-6 '>Duck Mart</h1>
                     <p className='text-left'>
 	    		• API endpoint for segmentaion usecases<br/>
                         • Data loaded into Duckdb<br/>
@@ -50,7 +44,7 @@ export default function Projects() {
                     <div className='flex flex-row gap-4 justify-left  mt-6'>
                         <Link href={"https://github.com/gaurav-2-0-0-2/suvidha-client"}><FiGithub size={20} /></Link>
                     </div>
-                    <h1 className='text-center text-2xl font-bold mt-6 font-Comfortaa'>Suvidha</h1>
+                    <h1 className='text-center text-2xl font-bold mt-6 '>Suvidha</h1>
                     <p className='text-center'>
                         Suvidha aims to solve the issue exists in traditional way of distribution of ration by digitizing it and giving the control to the customer
                     </p>
@@ -60,11 +54,8 @@ export default function Projects() {
                         <li>Tailwind CSS</li>
                         <li>Postgresql</li>
                     </ul>
-
                 </motion.div>
             </section>
-
-
         </div>
     )
 } 

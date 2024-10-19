@@ -19,11 +19,8 @@ module.exports = {
      },
     extend: {
       fontFamily:{
-      "Rubik":["Rubik", ...defaultTheme.fontFamily.sans],
-      "Labrada": ["Labrada", ...defaultTheme.fontFamily.sans],
-      "Comfortaa": ["Comfortaa", ...defaultTheme.fontFamily.sans],
-      "Nunito":["Nunito", ...defaultTheme.fontFamily.sans ],
-        },
+       JetBrainsMono: ["var(--font-JetBrainsMono)"],
+      },
 
     },
     
