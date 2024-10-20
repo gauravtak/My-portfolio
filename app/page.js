@@ -1,8 +1,4 @@
 "use client";
-import { useEffect } from 'react';
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { FaTwitter, FaGit, FaJsSquare, FaReact, FaPython, FaGithub } from "react-icons/fa";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
@@ -11,7 +7,6 @@ import { SiTypescript, SiPostgresql} from "react-icons/si";
 import localFont from "next/font/local";
 
 export default function Home() {
-  const router = useRouter();
 	
   return (
     <div className={`relative m-auto font-JetBrainsMono`}>
