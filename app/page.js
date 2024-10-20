@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import { FaTwitter, FaGit, FaJsSquare, FaReact, FaPython, FaGithub } from "react-icons/fa";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";

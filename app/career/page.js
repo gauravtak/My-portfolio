@@ -1,7 +1,3 @@
-"use client";
-import { useEffect } from 'react';
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
 
