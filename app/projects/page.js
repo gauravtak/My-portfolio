@@ -11,20 +11,12 @@ const boxVariant = {
 }
 
 export default function Projects() {
-    const control = useAnimation();
-    const [ref, inView] = useInView();
-
-    useEffect(() => {
-        if (inView) {
-            control.start("visible")
-        }
-    }, [control, inView]);
-
+	
     return (
         <div className="font-JetBrainsMono">
             <section className='flex flex-col md:flex-row justify-center gap-4 mx-10 mt-16  text-[#d1d0d0]'>
                  {/******************* 1st Project *******************/}
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-cyan max-w-[380px] px-6  pb-10 rounded-lg'>
+                <div className='css-card-tile-cyan max-w-[380px] px-6  pb-10 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left mt-6'>
                         <Link href={"https://github.com/gaurav-2-0-0-2/DuckMart"}><FiGithub size={20} /></Link>
                     </div>
@@ -38,9 +30,9 @@ export default function Projects() {
                         <li>Python</li>
                         <li>Duck DB</li>
                     </ul>
-                </motion.div>
+                </div>
                   {/******************* 2nd Project **********************/}
-                <motion.div ref={ref} variants={boxVariant} initial="hidden" animate={control} className='css-card-tile-blue max-w-[380px] px-10 pb-10 rounded-lg'>
+                <div className='css-card-tile-blue max-w-[380px] px-10 pb-10 rounded-lg'>
                     <div className='flex flex-row gap-4 justify-left  mt-6'>
                         <Link href={"https://github.com/gaurav-2-0-0-2/suvidha-client"}><FiGithub size={20} /></Link>
                     </div>
@@ -54,7 +46,7 @@ export default function Projects() {
                         <li>Tailwind CSS</li>
                         <li>Postgresql</li>
                     </ul>
-                </motion.div>
+                </div>
             </section>
         </div>
     )
