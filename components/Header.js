@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { MdHome } from "react-icons/md";
+import { RiProjectorLine } from "react-icons/ri";
+import { MdOutlineWorkOutline } from "react-icons/md";
 
 export default function Header() {
     return(
