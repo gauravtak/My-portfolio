@@ -31,7 +31,7 @@ export default function Blog(){
             <Link href={'/blogs/' + blog.slug} passHref key={blog.slug}>
               <div className='py-2 flex justify-between align-middle gap-2'>
                   <div className="blog-card p-6 rounded-xl transition ease-in-out delay-150">
-                      <h3 className="md:text-xl mb-2 text-sm font-bold">{blog.meta.title}</h3>
+                      <h3 className="md:text-xl hover:underline mb-2 text-sm font-bold">{blog.meta.title}</h3>
                       <p className="text-gray-400 text-xs md:text-md">{blog.meta.description}</p>
                   </div>
                   <div className="my-auto md:text-md text-xs text-gray-400">

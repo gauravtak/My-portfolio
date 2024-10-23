@@ -18,7 +18,7 @@ export default function Home() {
       <div className="flex flex-col md:flex-row text-center justify-center  md:text-left">
         {/*------------------------------------------ 1st Motion div --------------------------------------------------------- */}
         {/* <div className='transition-all duration-200 hover:scale-125'> */}
-        <div className=" css-card-tile-cyan max-h-[380px] max-w-[500px] hover:drop-shadow-xl card basis-[100%]  py-12 px-10 m-10 md:mx-1 md:mb-10 rounded-lg ">
+        <div className=" css-card max-h-[380px] max-w-[500px] hover:drop-shadow-xl card basis-[100%]  py-12 px-10 m-10 md:mx-1 md:mb-10 rounded-lg ">
           <div className=" text-[#d1d0d0]  ">
             <img
               className="transition-all duration-200 hover:scale-150 shadow-2xl my-4 md:my-2 md:ml-4 mx-auto w-20 rounded-full"
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         {/*---------------------------------------- 3rd Motion div  -------------------------------------------*/}
-        <div className="css-card-tile-blue max-h-[380px] max-w-[300px] sm:max-w-[500px] hover:drop-shadow-xl mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 rounded-lg ">
+        <div className="css-card max-h-[380px] max-w-[300px] sm:max-w-[500px] hover:drop-shadow-xl mx-10 py-14 md:py-14 md:px-20 my-10 md:mx-1 rounded-lg ">
           <div className="text-[#d1d0d0]">
             <div className="relative flex ml-40 md:ml-2 md:flex-col md:p-[1rem] sm:inline-block sm:mx-auto">
               {/* ssm:mx-24 */}
@@ -86,7 +86,7 @@ export default function Home() {
       {/* -----------------------------------Next Section------------------------------------------ */}
       <section className="flex flex-col md:flex-row text-center justify-center md:text-left md:ml-[30px] ">
         {/*------------------------------ Things I know Section------------------------------------------------------  */}
-        <div className="css-card-tile-blue max-h-[450px] max-w-[500px] md:max-w-[640px] hover:drop-shadow-xl  basis-[100%] md:basis-[50%] md:pt-40 py-12 px-6 mx-10 md:mb-10 md:mx-1  rounded-lg">
+        <div className="css-card max-h-[450px] max-w-[500px] md:max-w-[640px] hover:drop-shadow-xl  basis-[100%] md:basis-[50%] md:pt-40 py-12 px-6 mx-10 md:mb-10 md:mx-1  rounded-lg">
           {/* ssm:pl-2 */}
           <div className=" text-[#d1d0d0] ">
             <div className="md:flex ml-5 md:flex-col mb-7">
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
 
         {/*----------------------------------------------- Hire Me section ------------------------------------------------------- */}
-        <div className="css-card-tile-cyan max-h-[450px] max-w-[500px] hover:drop-shadow-xl basis-[100%] lg:basis-[37.3%] md:basis-[38%] md:pt-20 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-7 rounded-lg">
+        <div className="css-card max-h-[450px] max-w-[500px] hover:drop-shadow-xl basis-[100%] lg:basis-[37.3%] md:basis-[38%] md:pt-20 py-16 px-10 my-10 md:my-0 mx-10 md:mb-10 md:mx-7 rounded-lg">
           <div className=" text-[#d1d0d0]  sm:pb-6">
             <div className="md:flex ml-5 md:flex-col mb-7">
               <h1 className="md:mt-5 mr-7 text-lg ">Hire Me</h1>
