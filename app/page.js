@@ -32,13 +32,13 @@ export default function Home() {
                   Gaurav
                 </span>
               </h1>
-              <p className="md:pr-40 md:mb-4 mt-4 ">Full Stack Developer</p>
+              <p className="md:pr-40 md:mb-4 mt-4 ">Full Stack Engineer</p>
             </div>
           </div>
         </div>
 
         {/*---------------------------------------- 2nd Motion div ----------------------------------------------*/}
-        <div className="css-card-tile-violet max-h-[380px] max-w-[500px]  hover:drop-shadow-xl  mx-10 py-12 md:py-10 md:px-12 md:my-10 md:mx-5 rounded-lg">
+        <div className="css-card max-h-[380px] max-w-[500px]  hover:drop-shadow-xl  mx-10 py-12 md:py-10 md:px-12 md:my-10 md:mx-5 rounded-lg">
           <div className=" text-[#d1d0d0]  inline-block md:mt-10">
             <div className="md:flex ml-2 md:flex-col ">
               <div className=" transition-all duration-200 hover:scale-110">
@@ -129,13 +129,10 @@ export default function Home() {
             <div className="md:flex ml-5 md:flex-col mb-7">
               <h1 className="md:mt-5 mr-7 text-lg ">Hire Me</h1>
             </div>
-            <div className="relative flex md:flex-row">
+            <div className="relative">
               <h1 className="text-bolder md:text-5xl inline-block md:ml-4 mx-auto text-lg font-Comfortaa">
                 Get In Touch
               </h1>
-              <Link href={"/contact"}>
-                <button type="button"></button>
-              </Link>
             </div>
           </div>
         </div>
