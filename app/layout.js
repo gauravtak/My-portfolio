@@ -1,9 +1,7 @@
-import localFont from "next/font/local";
 import "./globals.css";
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
-
-// const inter = Inter({subsets: ['latin']});
+import localFont from "next/font/local";
 
 const JetBrainsMono = localFont({
   src:
