@@ -2,6 +2,15 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import rehypeHighlight from 'rehype-highlight';
+import "@/styles/highlight-js/github-dark.css";
+
+const options = {
+    mdxOptions: {
+        remarkPlugins: [],
+        rehypePlugins: [rehypeHighlight],
+    }
+}
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join("blogs"));
@@ -33,10 +42,9 @@ export default function Post({ params }) {
   const props = getPost(params);
 
   return (
-    <article className="">
-      <h1 className="md:text-3xl font-bold">{props.frontMatter.title}</h1>
-      {/* @ts-expect-error Server Component*/}
-      <MDXRemote source={props.content} />
+    <article className="text-justify">
+      <h1 className="md:text-3xl mb-5 font-bold">{props.frontMatter.title}</h1>
+      <MDXRemote source={props.content} options={options} />
     </article>
   );
 }
