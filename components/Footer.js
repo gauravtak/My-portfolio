@@ -6,8 +6,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <div className="text-center">
-      <Social />
+    <div className="text-center mt-10">
+      <Social/>
       <section className="md:flex my-4 text-center md:justify-center md:gap-4 font-JetBrainsMono">
         <h2 className=" text-gray-400 mt-16 md:my-0">{year}</h2>
         <p className=" text-gray-400 ">
