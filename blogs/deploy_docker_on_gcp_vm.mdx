@@ -20,7 +20,7 @@ npm install
 npm run dev
 ```
 <br/>
-Your application is running on http://localhost:5173, go check in your browser. In the root of your project create a Dockerfile. A dockerfile is necessary to build an image of the application. An image is like a blueprint for the container. We are going to use this image to run our container and the amazing thing is you can run multiple containers with the same image, awesome.
+Your application is running on http://localhost:5173, go check in your browser. In the root of your project create a Dockerfile. A dockerfile is necessary to build an image of the application. An image is like a blueprint for the container. We are going to use this image to run our container and the amazing thing is you can run multiple containers with the same image, awesome. 
 <br/>
 ```Dockerfile
 
@@ -30,7 +30,7 @@ COPY package*.json .
 RUN npm install
 COPY . .
 RUN npm run build
-RUN rm -rf node_modules src public && npm i -g serve
+npm i -g serve
 EXPOSE 3000
 CMD ["serve", "-s", "dist"]
 
@@ -44,10 +44,9 @@ What is happening ?
     <li>Running npm install to install dependecies at build time</li>
     <li>Copying the files in docker image's filesystem</li>
     <li>Building our application (this will give us a dist folder)</li>
-    <li>Removing the files that are not needed after the build process and installing serve package for serving our dist folder, which contains the html, css and javascript after building the application</li>
     <li>Exposing the port 3000 </li>
     <li>CMD command always run inside a container, so we are going to serve our dist using this command</li>
 </ul> 
 <br/>
-Note: This is enough to build the image, also we have removed the files that are not needed, to reduce the size of docker image.
+Note: This is enough to build the image
 
