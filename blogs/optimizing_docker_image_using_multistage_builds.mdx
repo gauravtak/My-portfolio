@@ -4,6 +4,8 @@ date: '23/10/2024'
 description: In this I will take you through deploying a docker container on a GCP compute engine 
 ---
 
+Disclaimer: This is not your regular blog for learning purpose, I just wanted to write it so that I can remember things that I did by teaching some imaginary viewer. 
+
 I wanted to deploy an application on docker because it is bugging me why I am not using docker as I have heard a lot about how it eases the deployment process of modern software, so I decided to do the labour work and tried to figure out how to do it (The docker community on dicord is amazing). I am fairly new to the container world and I just wanted to put this blog up on my personal portfolio so that i can look cool and have all the SEO in the Google Search Engine....
 <br/>
 Oh sorry, we are here to deploy the application more specifically an application that is running inside a container.
@@ -98,5 +100,3 @@ docker build . -t vite-docker:latest --target=main
 ```
 <br/>
 What this command will do is, it will start building the image from main stage and as it will reach the COPY command, it goes to build stage and since the build stage is itself running from base stage so it will run the base stage first. After getting the dist folder from build, it comes back to the COPY command and will just copy the content of dist folder which is present in src directory at build stage to the app/dist in main stage. The next steps are same as steps 7, 8, 9 from the first Dockerfile that we created.
-
-
