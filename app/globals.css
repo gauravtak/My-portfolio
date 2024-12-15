@@ -14,14 +14,8 @@
 
 }
 
-
-
 body {
-    /* background-image: url('../public/space.gif'); */
-    /* background-color: #7ad081; */
-    /* background-image: linear-gradient(to top right, rgb(234, 103, 103), rgb(231, 98, 120), rgb(66, 126, 203)); */
-    /* background-color: #000000; */
-    background-color: #3E363F;
+    background-color: #2A3439;
     background-attachment: fixed;
 }
 
@@ -35,6 +29,16 @@ body {
   
 }
 
+.project-card{
+    background-color: rgb(255 255 255 / 0.1);
+}
+
+.project-card:hover{
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+    transition: ease-in-out 150ms; 
+}
+
 @keyframes a {
     0% {
         background-position: 0 0, 0 100%, 0 0, 100% 0;
@@ -44,33 +48,6 @@ body {
         background-position: 30px 0, -30px 100%, 0 -30px, 100% 30px;
     }
 }
-
-/*.css-card-tile-cyan {
-    background-color: rgb(255 255 255 / 0.05);
-    --tw-gradient-from: rgba(0, 164, 204, 0.5) -225% var(--tw-gradient-from-position);
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(10, 10, 10, 1) 45% var(--tw-gradient-via-position), var(--tw-gradient-to);
-    --tw-gradient-to: rgba(0, 164, 204, 0.5) 225% var(--tw-gradient-to-position);
-    background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-
-}
-
-.css-card-tile-violet {
-    background-color: rgb(255 255 255 / 0.05);
-    --tw-gradient-from: rgba(170, 0, 204, 0.5) -225% var(--tw-gradient-from-position);
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(10, 10, 10, 1) 45% var(--tw-gradient-via-position), var(--tw-gradient-to);
-    --tw-gradient-to: rgba(153, 0, 204, 0.5) 225% var(--tw-gradient-to-position);
-    background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-
-}
-
-.css-card-tile-blue {
-    background-color: rgb(255 255 255 / 0.05);
-    --tw-gradient-from: rgba(27, 69, 255, 0.609) -225% var(--tw-gradient-from-position);
-    --tw-gradient-stops: var(--tw-gradient-from), rgba(10, 10, 10, 1) 45% var(--tw-gradient-via-position), var(--tw-gradient-to);
-    --tw-gradient-to: rgba(14, 110, 255, 0.5) 225% var(--tw-gradient-to-position);
-    background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-
-}*/
 
 .css-btn{
     background-color: rgb(100 179 174 / .15);

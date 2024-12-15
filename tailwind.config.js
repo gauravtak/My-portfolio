@@ -19,7 +19,7 @@ module.exports = {
      },
     extend: {
       fontFamily:{
-       JetBrainsMono: ["var(--font-JetBrainsMono)"],
+       poppins: ["var(--font-poppins)"]
       },
 
     },

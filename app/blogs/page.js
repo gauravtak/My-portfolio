@@ -21,11 +21,8 @@ export default function Blog(){
   return (
 
    <main className="flex flex-col">
-      <h1 className="text-3xl font-bold">
-        Blogs
-      </h1>
-	 
-      <section className='py-10'>
+      <h1 className="text-5xl leading-normal bg-gradient-to-br from-cyan-500 to-yellow-400 text-transparent bg-clip-text font-bold">Blogs</h1>
+      <section className='py-4'>
         <div className='py-2'>
           {blogs.map(blog => (
             <Link href={'/blogs/' + blog.slug} passHref key={blog.slug}>

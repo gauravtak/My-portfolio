@@ -1,16 +1,17 @@
 import "./globals.css";
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
-import localFont from "next/font/local";
+import localFonts from "next/font/local";
 
-const JetBrainsMono = localFont({
-  src:
-    [{
-      path: "../fonts/JetBrainsMono-Regular.woff2",
-      weight: "400"
-    }],
-    variable: "--font-JetBrainsMono"
-});
+const Poppins = localFonts({
+    src: [ 
+        {
+            path: "../fonts/poppins-medium-webfont.woff2"
+        }
+    ],
+    variable: "--font-poppins"
+})
+
 
 export const metadata = {
   title: "Portfolio",
@@ -20,12 +21,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en"  >
-      <body className={`${JetBrainsMono.variable} flex flex-col h-screen`}>
-        <Header/>
-	  <div className="flex-1">
+      <body className={`${Poppins.variable} flex flex-col h-screen max-w-screen-lg mx-auto`}>
+	  <div className="flex-1 mx-auto w-1/2">
+            <Header/>
           	{children}
 	  </div> 
-        <Footer />
+            <Footer />
       </body>
     </html>
   );

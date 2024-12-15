@@ -2,10 +2,9 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 import Link from "next/link";
 
 export default function Career() {
-
     return (
         <div>
-            <section className='mt-16 w-1/2 mx-auto font-JetBrainsMono text-[#d1d0d0]'>
+            <section className='mt-16 font-parkinsans text-[#d1d0d0]'>
                  {/******************* 1st Company*******************/}
                 <div className='css-card p-3 rounded-lg'>
                     <Link className='hover:underline' href={'https://truss.biz'}><h1 className='text-2xl font-bold'>Truss Studios</h1></Link>

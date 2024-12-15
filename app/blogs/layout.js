@@ -6,8 +6,8 @@ export const metadata = {
 
 export default function BlogLayout({ children }) {
   return(
-	<section className={`font-JetBrainsMono text-white mt-10`}>
-		<div className="md:w-1/2 md:mx-auto mx-4">
+	<section className={`font-poppins text-[#F8F8FF] mt-10`}>
+		<div className="mx-4">
 			{children}
 		</div> 
 	</section>
