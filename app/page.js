@@ -8,8 +8,8 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import localFont from "next/font/local";
-import Project from "../components/Home/Project.js"
-import {ProjectData} from "../components/Home/ProjectData.js"
+import Item from "../components/Home/Item.js"
+import {ProjectsData, BooksData} from "../components/Home/Data.js"
 
 export default function Home() {
   return (
@@ -33,8 +33,17 @@ export default function Home() {
       <h1 className="text-5xl leading-normal bg-gradient-to-br from-red-500 to-yellow-400 text-transparent bg-clip-text font-bold">Projects</h1>
       <div className="flex flex-col gap-5" >
         {
-            ProjectData.map((project, index)=>{
-                return <Project key={index} title={project.title} githubLink={project.githubLink} desc={project.desc}/>
+            ProjectsData.map((project, index)=>{
+                return <Item key={index} title={project.title} link={project.link} desc={project.desc}/>
+            })
+        }
+      </div> 
+
+      <h1 className="text-5xl leading-normal bg-gradient-to-br from-red-400 to-fuchsia-700 text-transparent bg-clip-text font-bold">Books</h1>
+      <div className="flex flex-col gap-5" >
+        {
+            BooksData.map((book, index)=>{
+                return <Item key={index} title={book.title} link={book.link} desc={book.desc}/>
             })
         }
       </div> 
