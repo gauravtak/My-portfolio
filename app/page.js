@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
+  FaInstagram,
 } from "react-icons/fa";
 import { SiTypescript, SiGo, SiC } from "react-icons/si";
 import localFont from "next/font/local";
@@ -107,17 +108,21 @@ export default function Home() {
             </p>
             
             <div className="flex justify-center space-x-6">
-              <a href="mailto:your.email@example.com" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+              <a href="mailto:gauravtak996@gmail.com" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
                 <FaEnvelope className="text-xl" />
                 <span>Email</span>
               </a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+              <a href="https://github.com/gauravtak" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
                 <FaGithub className="text-xl" />
                 <span>GitHub</span>
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+              <a href="https://www.linkedin.com/in/gaurav-tak-a4190222a/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
                 <FaLinkedin className="text-xl" />
                 <span>LinkedIn</span>
+              </a>
+              <a href="https://www.instagram.com/be_sane_gt/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors">
+                <FaInstagram className="text-xl" />
+                <span>Instagram</span>
               </a>
             </div>
           </div>
