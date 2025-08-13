@@ -1,56 +1,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-
-/* #c53661  reddish-pinkish  */
-/* #705276 dark-faded-purple */
-/* #9b557a */
-*, ::before, ::after {
-    --tw-gradient-from-position: var(--tw-empty,/*!*/ /*!*/);
-    --tw-gradient-via-position: var(--tw-empty,/*!*/ /*!*/);
-    --tw-gradient-to-position: var(--tw-empty,/*!*/ /*!*/);
-
+@layer base {
+  body {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+  }
 }
 
-body {
-    background-color: #2A3439;
-    background-attachment: fixed;
-}
-
-
-.css-card{
-    background-color: rgb(255 255 255 / 0.1);
-}
-
-.blog-card:hover{
-  background-color: rgb(255 255 255 / 0.1);
+@layer components {
+  .card {
+    @apply bg-white shadow-sm hover:shadow-md transition-shadow duration-200;
+    border: 2px solid #1f2937; /* dark gray */
+  }
   
+  .section-card {
+    @apply bg-white p-6 mb-8;
+    border: 2px solid #374151; /* medium dark gray */
+  }
+  
+  .project-card {
+    @apply bg-white p-6 hover:shadow-lg transition-shadow duration-200;
+    border: 2px solid #1e40af; /* dark blue */
+  }
+  
+  .book-card {
+    @apply bg-white p-6 hover:shadow-lg transition-shadow duration-200;
+    border: 2px solid #7c2d12; /* dark brown */
+  }
+  
+  .skill-tag {
+    @apply inline-block bg-gray-100 border border-gray-300 text-gray-700 px-3 py-1 rounded-md text-sm font-medium mr-2 mb-2;
+  }
 }
 
-.project-card{
-    background-color: rgb(255 255 255 / 0.1);
+/* Blog content styling */
+.prose h2 {
+  @apply text-2xl font-bold text-gray-900 mt-8 mb-4;
 }
 
-.project-card:hover{
-    background-color: whitesmoke;
-    color: rgb(0, 0, 0);
-    transition: ease-in-out 150ms; 
+.prose h3 {
+  @apply text-xl font-bold text-gray-900 mt-6 mb-3;
 }
 
-@keyframes a {
-    0% {
-        background-position: 0 0, 0 100%, 0 0, 100% 0;
-    }
-
-    100% {
-        background-position: 30px 0, -30px 100%, 0 -30px, 100% 30px;
-    }
+.prose p {
+  @apply text-gray-700 mb-4 leading-relaxed;
 }
 
-.css-btn{
-    background-color: rgb(100 179 174 / .15);
-    --tw-text-opacity: 1;
-    color: rgb(100 179 174 / var(--tw-text-opacity));
+.prose ul, .prose ol {
+  @apply mb-4 pl-6;
+}
+
+.prose li {
+  @apply text-gray-700 mb-2;
+}
+
+.prose pre {
+  @apply bg-gray-100 border border-gray-300 rounded-md p-4 mb-4 overflow-x-auto;
+  white-space: pre;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.prose code {
+  @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0 text-gray-800;
+  white-space: pre;
+  display: block;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-gray-300 pl-4 italic text-gray-600 mb-4;
+}
+
+/* Ensure code blocks maintain formatting */
+pre code {
+  white-space: pre !important;
+  display: block !important;
+  overflow-x: auto;
 }
