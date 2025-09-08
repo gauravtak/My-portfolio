@@ -1,0 +1,83 @@
+{
+  "name": "Gaurav",
+  "title": "Software Engineer",
+  "description": "Software Engineer with expertise in modern web technologies, passionate about building scalable solutions and continuous learning.",
+  "background": {
+    "summary": "I'm a software engineer with experience in multiple programming languages and technologies. I enjoy solving complex problems and building efficient, scalable applications. When I'm not coding, I love reading books, researching new technologies, and staying up-to-date with industry trends."
+  },
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "C",
+    "Go",
+    "React",
+    "Angular",
+    "Posthresql",
+    "MongoDB",
+    "Sequelize",
+    "Nest.js",
+    "Node.js",
+    "Docker",
+    "Git"
+  ],
+  "work_experience": [
+    {
+      "role": "Software Engineer",
+      "company": "Tech Solutions Inc.",
+      "duration": "Jan 2022 - Present",
+      "responsibilities": [
+        "Developed and maintained web applications using React and Node.js.",
+        "Collaborated with cross-functional teams to design and implement new features.",
+        "Optimized application performance and scalability."
+      ]
+    },
+    {
+      "role": "Junior Developer",
+      "company": "Web Innovations",
+      "duration": "Jun 2020 - Dec 2021",
+      "responsibilities": [
+        "Assisted in the development of client-side applications using Angular.",
+        "Participated in code reviews and contributed to team knowledge sharing.",
+        "Wrote unit tests to ensure code quality and reliability."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Squeez",
+      "description": "A command line file compression tool in Go"
+    },
+    {
+      "name": "Http Server in C",
+      "description": "A simple Http server written in C"
+    },
+    {
+      "name": "Monkey Interpreter",
+      "description": "An interpreter written in Go for Monkey Programming Language"
+    },
+    {
+      "name": "ccwc",
+      "description": "A unix wc clone written in Rust"
+    }
+  ],
+  "books_read": [
+    {
+      "title": "The Outsider",
+      "author": "Albert Camus"
+    },
+    {
+      "title": "Viklang Shraddha Ka Daur",
+      "author": "Harishankar Parsai"
+    }
+  ],
+  "contact": {
+    "email": "gauravtak996@gmail.com",
+    "links": {
+      "GitHub": "https://github.com/gauravtak",
+      "LinkedIn": "https://www.linkedin.com/in/gaurav-tak-a4190222a/",
+      "Instagram": "https://www.instagram.com/be_sane_gt/"
+    }
+  },
+  "footer_note": "© 2025 Gaurav. All rights reserved."
+}
